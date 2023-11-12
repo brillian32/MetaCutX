@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/timelineEditor/">
+    <file alias="main.qml">/Users/brillan/CLionProjects/MetaCutX/App/MXTimeline/main.qml</file>
+    <file alias="TimeScale.qml">/Users/brillan/CLionProjects/MetaCutX/App/MXTimeline/TimeScale.qml</file>
+    <file alias="TrackHead.qml">/Users/brillan/CLionProjects/MetaCutX/App/MXTimeline/TrackHead.qml</file>
+  </qresource>
+</RCC>
+
