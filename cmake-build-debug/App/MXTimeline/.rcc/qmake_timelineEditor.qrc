@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/timelineEditor">
-    <file alias="qmldir">/Users/brillan/CLionProjects/MetaCutX/cmake-build-debug/App/MXTimeline/timelineEditor/qmldir</file>
-  </qresource>
-</RCC>
-

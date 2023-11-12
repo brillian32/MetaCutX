@@ -1,9 +1,0 @@
-<RCC>
-  <qresource prefix="/img">
-    <file alias="./lockTrack.png">/Users/brillan/CLionProjects/MetaCutX/App/MXTimeline/./lockTrack.png</file>
-    <file alias="./unlockTrack.png">/Users/brillan/CLionProjects/MetaCutX/App/MXTimeline/./unlockTrack.png</file>
-    <file alias="./disableMask.png">/Users/brillan/CLionProjects/MetaCutX/App/MXTimeline/./disableMask.png</file>
-    <file alias="./addTrack.png">/Users/brillan/CLionProjects/MetaCutX/App/MXTimeline/./addTrack.png</file>
-  </qresource>
-</RCC>
-

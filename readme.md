@@ -12,9 +12,10 @@
 # 已完成模块
 ## UI
 ### 时间线
-![img.png](img.png)
+![img.png](ShowCase%2Fimg.png)
 # 底层
 ## 视频解码
+![img_1.png](ShowCase%2Fimg_1.png)
 ## 视频超清ai
 
 # 依赖库安装

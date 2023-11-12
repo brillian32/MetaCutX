@@ -1,6 +1,0 @@
-module timelineEditor
-typeinfo apptimelineEditor.qmltypes
-prefer :/timelineEditor/
-TimeScale 1.0 TimeScale.qml
-TrackHead 1.0 TrackHead.qml
-
