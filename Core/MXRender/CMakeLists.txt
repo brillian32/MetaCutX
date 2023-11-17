@@ -26,4 +26,4 @@ target_link_directories(${PROJECT_NAME} PUBLIC ${FFMPEG_LIBRARY_DIRS})
 target_link_libraries(${PROJECT_NAME} PUBLIC ${FFMPEG_LIBRARIES} ${OpenCV_LIBS} Qt${QT_VERSION_MAJOR}::Widgets spdlog::spdlog)
 
 
-#add_subdirectory(example)
+add_subdirectory(test)
