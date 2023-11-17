@@ -62,6 +62,7 @@ Item {
 
     Component{
         id:track_com
+        //轨道
         Rectangle{
             id:rect_child
             property bool choose: false
@@ -140,30 +141,35 @@ Item {
                 onClicked: (mouse)=>{
                     listView.currentIndex = index
                     console.log(index)
-                    mouse.accepted=false
-                   // visable = false
-//                    parent.choose = !parent.choose
-//                    if(parent.choose){
-//                         parent.color = "#111213"
-//                    }
-//                    else{
-//                        parent.color = "#1b222a"
-//                    }
-
-
                 }
+            }
+
+            //剪辑片段
+            Clip{
+                id:clip
+                length: 40
+                anchors.top: parent.top
+                anchors.topMargin: 1
+                anchors.bottom: parent.bottom
+                x: outside_border.width
+                anchors.bottomMargin: 1
             }
 
             MouseArea{
                 propagateComposedEvents:true
                 anchors.fill: img_lock
+                parent:img_lock
                 onClicked: {
                     visable = !visable
                     console.log("visable ",visable)
+                    mouse.accepted = false;
                 }
-
-
+                onPressed:
+                {
+                    mouse.accepted = false; //忽略点击事件，传递给下一层处理
+                }
             }
+
         }
     }
 
@@ -299,12 +305,6 @@ Item {
                               }
 
                     }
-
-
-
-
-
-
                  }
 
              }
@@ -319,8 +319,6 @@ Item {
 
             }
          }
-
-
 
      }
 }

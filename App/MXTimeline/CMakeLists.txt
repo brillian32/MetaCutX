@@ -15,6 +15,7 @@ qt_add_qml_module(apptimelineEditor
     URI timelineEditor
     VERSION 1.0
     QML_FILES main.qml  TimeScale.qml TrackHead.qml
+    QML_FILES Clip.qml
 )
 set(viewer_resource_files
         ./lockTrack.png

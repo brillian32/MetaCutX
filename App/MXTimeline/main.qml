@@ -6,7 +6,7 @@ Window {
     height: 480
     visible: true
     title: qsTr("timelineView")
-color: "#000000"
+    color: "#000000"
 
 
     Rectangle{
