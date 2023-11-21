@@ -22,6 +22,8 @@
 opencv
 ffmpeg
 qt6.4
+doctest
+spdlog
 # 工程编译
 - mkdir build
 - cd build

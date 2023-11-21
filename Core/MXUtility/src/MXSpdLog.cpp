@@ -2,6 +2,8 @@
 // Created by brillan on 2023/11/20.
 //
 #include "MXSpdLog.h"
+
+#include <utility>
 void init_spdlog(std::string log_path)
 {
 	//异步日志，具有8k个项目和1个后台线程的队列
@@ -74,4 +76,14 @@ std::shared_ptr<spdlog::logger>  get_async_file_logger(std::string name)
 		//记录器是自动注册的，不需要手动注册  spdlog::register_logger(name);
 	}
 	return log;
+}
+
+
+LogRunTime::LogRunTime(std::string name)
+{
+	m_name = std::move(name);
+}
+LogRunTime::~LogRunTime()
+{
+	spdlog::info(" <" + m_name +"> " + "Elapsed time: {:.6} seconds", m_sw);
 }

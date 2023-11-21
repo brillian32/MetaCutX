@@ -31,7 +31,9 @@ public:
 
 	void decodeVideo();
 	void setOutputFilePath(std::string path);
-	cv::Mat getFrameMat(double percent);
+	cv::Mat getFrameMat(int64_t frames);
+	cv::Mat getFrameMat2(double percent);
+	double getDuration();
 
 private:
 	void init();

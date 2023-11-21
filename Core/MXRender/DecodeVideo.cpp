@@ -61,7 +61,7 @@ void ConvertAVFrameToMat(AVFrame* frame)
 
 void DisplayFrame(const cv::Mat& frame) {
 	cv::imshow("Frame", frame);
-	cv::waitKey(1);  // 等待1毫秒，以更新显示
+	cv::waitKey(10000);  // 等待1毫秒，以更新显示
 }
 DecodeVideo::DecodeVideo(std::string videoPath)
 {
@@ -91,7 +91,6 @@ void DecodeVideo::decodeVideo()
 {
 	// 初始化FFmpeg
 //	av_register_all(); 4版本后已移除
-
 
 	// 分配AVPacket和AVFrame
 	AVPacket* packet = av_packet_alloc();
@@ -180,7 +179,7 @@ void DecodeVideo::init()
 		return ;
 	}
 }
-cv::Mat DecodeVideo::getFrameMat(double percentage)
+cv::Mat DecodeVideo::getFrameMat2(double percentage)
 {
 	AVRational time_base = formatContext->streams[videoStreamIndex]->time_base;
 	double duration = formatContext->streams[videoStreamIndex]->duration * av_q2d(time_base);
@@ -207,6 +206,46 @@ cv::Mat DecodeVideo::getFrameMat(double percentage)
 				cv::Mat cvFrame = AVFrame2CvMat(seek_frame);
 				// 显示帧
 //				DisplayFrame(cvFrame);
+				av_packet_unref(pkt);
+				return cvFrame;
+			}
+		}
+	}
+	return {};
+}
+double DecodeVideo::getDuration()
+{
+	AVRational time_base = formatContext->streams[videoStreamIndex]->time_base;
+	double duration = formatContext->streams[videoStreamIndex]->duration * av_q2d(time_base);
+	return duration;
+}
+cv::Mat DecodeVideo::getFrameMat(int64_t frames)
+{
+	AVRational time_base = formatContext->streams[videoStreamIndex]->time_base;
+	auto cntFrames = formatContext->streams[videoStreamIndex]->nb_frames;
+	double duration = formatContext->streams[videoStreamIndex]->duration;
+	int64_t timestamp = frames*1.0/cntFrames * duration;
+	int ret = av_seek_frame(formatContext, videoStreamIndex, timestamp, AVSEEK_FLAG_BACKWARD);
+	if (ret < 0) {
+		return cv::Mat();
+	}
+	AVPacket *pkt = av_packet_alloc();
+
+	// 读取帧数据
+	while (av_read_frame(formatContext, pkt) >= 0) {
+		if (pkt->stream_index == videoStreamIndex) {
+			// 解码帧数据
+			ret = avcodec_send_packet(codecContext, pkt);
+			if (ret < 0) {
+				return {};
+			}
+			AVFrame *seek_frame = av_frame_alloc();
+			while (avcodec_receive_frame(codecContext, seek_frame) == 0) {
+				// 将AVFrame转换为OpenCV的Mat
+//				 ConvertAVFrameToMat(frame);
+				cv::Mat cvFrame = AVFrame2CvMat(seek_frame);
+				// 显示帧
+				DisplayFrame(cvFrame);
 				av_packet_unref(pkt);
 				return cvFrame;
 			}

@@ -42,4 +42,18 @@ std::shared_ptr<spdlog::logger>  get_async_file_logger(std::string name);
 #define LOGSW() spdlog::stopwatch()
 
 
+class LogRunTime
+{
+public:
+	explicit LogRunTime(std::string name);
+	~LogRunTime();
+
+private:
+		std::string m_name;
+		spdlog::stopwatch m_sw;
+};
+
+
+#define LOG_RUN_TIME(name) LogRunTime log_run_time(name)
+
 #endif //MYSPDLOG_H
