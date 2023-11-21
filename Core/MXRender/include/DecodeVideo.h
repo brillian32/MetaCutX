@@ -9,6 +9,7 @@
 #include <string>
 #include <stdexcept>
 #include <cstdint>
+#include <opencv2/core/mat.hpp>
 
 extern "C" {
 #include <libavformat/avformat.h>
@@ -30,6 +31,7 @@ public:
 
 	void decodeVideo();
 	void setOutputFilePath(std::string path);
+	cv::Mat getFrameMat(double percent);
 
 private:
 	void init();
@@ -41,6 +43,7 @@ private:
 	AVFormatContext* formatContext = nullptr;
 	int videoStreamIndex = -1;
 	AVCodecContext* codecContext = nullptr;
+	AVCodecParameters* codecParameters = nullptr;
 
 };
 

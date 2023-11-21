@@ -139,7 +139,6 @@ void DecodeVideo::init()
 	}
 
 	// 查找视频流
-	AVCodecParameters* codecParameters = nullptr;
 	for (int i = 0; i < formatContext->nb_streams; i++) {
 		if (formatContext->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_VIDEO) {
 			videoStreamIndex = i;
@@ -180,4 +179,38 @@ void DecodeVideo::init()
 		spdlog::log(spdlog::level::err, "打开解码器失败");
 		return ;
 	}
+}
+cv::Mat DecodeVideo::getFrameMat(double percentage)
+{
+	AVRational time_base = formatContext->streams[videoStreamIndex]->time_base;
+	double duration = formatContext->streams[videoStreamIndex]->duration * av_q2d(time_base);
+	double timestamp = percentage * duration;
+	int64_t pts = timestamp / av_q2d(time_base);
+	int ret = av_seek_frame(formatContext, videoStreamIndex, pts, AVSEEK_FLAG_BACKWARD);
+	if (ret < 0) {
+		return cv::Mat();
+	}
+	AVPacket *pkt = av_packet_alloc();
+
+	// 读取帧数据
+	while (av_read_frame(formatContext, pkt) >= 0) {
+		if (pkt->stream_index == videoStreamIndex) {
+			// 解码帧数据
+			ret = avcodec_send_packet(codecContext, pkt);
+			if (ret < 0) {
+				return {};
+			}
+			AVFrame *seek_frame = av_frame_alloc();
+			while (avcodec_receive_frame(codecContext, seek_frame) == 0) {
+				// 将AVFrame转换为OpenCV的Mat
+//				 ConvertAVFrameToMat(frame);
+				cv::Mat cvFrame = AVFrame2CvMat(seek_frame);
+				// 显示帧
+//				DisplayFrame(cvFrame);
+				av_packet_unref(pkt);
+				return cvFrame;
+			}
+		}
+	}
+	return {};
 }

@@ -16,14 +16,13 @@ find_package(spdlog CONFIG REQUIRED)
 include_directories(Core/MXRender)
 
 
-set(src ./MXRenderTest.cpp ./MXRenderTest.h DecodeVideo.cpp DecodeVideo.h VideoInfo.cpp VideoInfo.h
+set(src ./MXRenderTest.cpp ./include/MXRenderTest.h DecodeVideo.cpp ./include/DecodeVideo.h VideoInfo.cpp ./include/VideoInfo.h
         )
 
 add_library(${PROJECT_NAME} ${src})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${FFMPEG_INCLUDE_DIRS} ${OPENCV_INCLUDE_DIRS})
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_directories(${PROJECT_NAME} PUBLIC ${FFMPEG_LIBRARY_DIRS})
 target_link_libraries(${PROJECT_NAME} PUBLIC ${FFMPEG_LIBRARIES} ${OpenCV_LIBS} Qt${QT_VERSION_MAJOR}::Widgets spdlog::spdlog)
 
-
-add_subdirectory(test)
