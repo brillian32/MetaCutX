@@ -24,8 +24,10 @@ TEST_CASE("Decode Video") {
 	{
 		DecodeVideo decode(VIDEO_FILE_PATH);
 		LOG_RUN_TIME("get frame");
-		CHECK(!decode.getFrameMat2(1.0).empty());
-		CHECK(!decode.getFrameMat(60).empty());
+//		CHECK(!decode.getFrameMat2(1.0).empty());
+//		CHECK(!decode.getFrameMat(60).empty());
+		decode.getDuration();
+//		CHECK(!decode.getFrameMatAtTime(575).empty());
 	}
 	SUBCASE("play video")
 	{

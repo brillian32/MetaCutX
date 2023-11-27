@@ -33,6 +33,7 @@ public:
 	void setOutputFilePath(std::string path);
 	cv::Mat getFrameMat(int64_t frames);
 	cv::Mat getFrameMat2(double percent);
+	cv::Mat getFrameMatAtTime(int64_t timeStamp);
 	double getDuration();
 
 private:

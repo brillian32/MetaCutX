@@ -40,4 +40,3 @@ spdlog
 8. Libavformat：FFmpeg中的格式管理库，用于处理不同格式的视频和音频。
 9. Libavfilter：FFmpeg中的滤镜库，用于应用各种特效和转换。
 10. Shader编程语言：用于编写GPU上的渲染效果和特效。
-
