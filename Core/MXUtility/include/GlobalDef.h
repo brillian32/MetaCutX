@@ -11,6 +11,8 @@
 #else
 #define MX_API __declspec(dllimport)
 #endif
+#else
+#define MX_API
 #endif
 
 

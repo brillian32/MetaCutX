@@ -8,10 +8,12 @@
 #include <doctest/doctest.h>
 #include "DecodeVideo.h"
 #include "opencv2/opencv.hpp"
-#include <io.h>
-#include <fcntl.h>
 
+#if WIN32
 #define VIDEO_FILE_PATH u8"C:\\Users\\17305\\Desktop\\牧原转正PPT\\热加载技术.mp4"
+#else
+#define VIDEO_FILE_PATH "/Users/brillan/Desktop/xingshan.mp4"
+#endif
 
 TEST_CASE("log init")
 {
