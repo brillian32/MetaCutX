@@ -41,6 +41,7 @@ TEST_CASE("play video")
 {
 	DecodeVideo decode(VIDEO_FILE_PATH);
 	LOG_RUN_TIME("play video");
+	decode.setDecodeBegin(60*2*3000);
 	decode.decodeVideo();
 }
 

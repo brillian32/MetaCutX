@@ -83,6 +83,13 @@ cv::Mat AVFrame2CvMat(AVFrame *frame) {
 	return image;
 }
 
+void DecodeVideo::setDecodeBegin(int beginFrame)
+{
+	AVRational time_base = formatContext->streams[videoStreamIndex]->time_base;
+	int64 targetTime = av_rescale_q(beginFrame, AV_TIME_BASE_Q,time_base);
+	av_seek_frame(formatContext, videoStreamIndex, targetTime, AVSEEK_FLAG_BACKWARD);
+}
+
 void DecodeVideo::decodeVideo()
 {
 	// 初始化FFmpeg
@@ -281,3 +288,4 @@ cv::Mat DecodeVideo::getFrameMatAtTime(int64_t timeStamp)
 	av_packet_unref(pkt);
 	return {};
 }
+
