@@ -4,13 +4,9 @@
 
 #include "DecodeVideo.h"
 #include <utility>
-#include <QApplication>
 #include "opencv2/opencv.hpp"
 #include "opencv2/imgproc.hpp"
-#include "qpixmap.h"
-#include "QImage"
-#include "QDebug"
-#include "qpainter.h"
+
 
 extern "C" {
 #include <libavformat/avformat.h>
@@ -118,8 +114,6 @@ void DecodeVideo::decodeVideo()
 	avcodec_free_context(&codecContext);
 	av_frame_free(&frame);
 	av_packet_free(&packet);
-
-
 }
 
 void DecodeVideo::setOutputFilePath(std::string path)

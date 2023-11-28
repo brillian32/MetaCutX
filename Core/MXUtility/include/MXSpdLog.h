@@ -13,10 +13,11 @@
 #include "spdlog/sinks/stdout_color_sinks.h"
 #include "spdlog/sinks/callback_sink.h"
 #include <iostream>
+#include <GlobalDef.h>
 
-void init_spdlog(std::string log_path);
+MX_API void init_spdlog(std::string log_path);
 
-std::shared_ptr<spdlog::logger>  get_async_file_logger(std::string name);
+MX_API std::shared_ptr<spdlog::logger> get_async_file_logger(std::string name);
 
 #define INITLOG()     init_spdlog()
 
@@ -31,26 +32,26 @@ std::shared_ptr<spdlog::logger>  get_async_file_logger(std::string name);
 //单个日志文件
 #define GETLOG(LOG_NAME) get_async_file_logger(LOG_NAME)
 
-#define LOGGER_TRACE(logger,...)     SPDLOG_LOGGER_TRACE(logger,__VA_ARGS__)
-#define LOGGER_DEBUG(logger,...)     SPDLOG_LOGGER_DEBUG(logger,__VA_ARGS__)
-#define LOGGER_INFO(logger,...)      SPDLOG_LOGGER_INFO(logger,__VA_ARGS__)
-#define LOGGER_WARN(logger,...)      SPDLOG_LOGGER_WARN(logger,__VA_ARGS__)
-#define LOGGER_ERROR(logger,...)     SPDLOG_LOGGER_ERROR(logger,__VA_ARGS__)
-#define LOGGER_CRITICAL(logger,...)  SPDLOG_LOGGER_CRITICAL(logger,__VA_ARGS__)
+#define LOGGER_TRACE(logger, ...)     SPDLOG_LOGGER_TRACE(logger,__VA_ARGS__)
+#define LOGGER_DEBUG(logger, ...)     SPDLOG_LOGGER_DEBUG(logger,__VA_ARGS__)
+#define LOGGER_INFO(logger, ...)      SPDLOG_LOGGER_INFO(logger,__VA_ARGS__)
+#define LOGGER_WARN(logger, ...)      SPDLOG_LOGGER_WARN(logger,__VA_ARGS__)
+#define LOGGER_ERROR(logger, ...)     SPDLOG_LOGGER_ERROR(logger,__VA_ARGS__)
+#define LOGGER_CRITICAL(logger, ...)  SPDLOG_LOGGER_CRITICAL(logger,__VA_ARGS__)
 
 //时间统计宏
 #define LOGSW() spdlog::stopwatch()
 
 
-class LogRunTime
+class MX_API LogRunTime
 {
 public:
 	explicit LogRunTime(std::string name);
 	~LogRunTime();
 
 private:
-		std::string m_name;
-		spdlog::stopwatch m_sw;
+	std::string m_name;
+	spdlog::stopwatch m_sw;
 };
 
 

@@ -22,7 +22,9 @@ extern "C" {
 #include "libavformat/avio.h"
 }
 
-class DecodeVideo
+#include "GlobalDef.h"
+
+class MX_API DecodeVideo
 {
 public:
 	explicit DecodeVideo(std::string videoPath);

@@ -12,7 +12,7 @@ void init_spdlog(std::string log_path)
 	auto stdout_sink = std::make_shared<spdlog::sinks::stdout_color_sink_mt >();
 	stdout_sink->set_level(spdlog::level::debug);
 	//日志文件输出，0点0分创建新日志
-	auto file_sink = std::make_shared<spdlog::sinks::daily_file_sink_mt>("log_path", 0, 0);
+	auto file_sink = std::make_shared<spdlog::sinks::daily_file_sink_mt>(log_path, 0, 0);
 	file_sink->set_level(spdlog::level::info);
 	//日志回调
 	auto callback_sink = std::make_shared<spdlog::sinks::callback_sink_mt>([](const spdlog::details::log_msg& msg)
@@ -60,6 +60,7 @@ void init_spdlog(std::string log_path)
 	//3秒刷新一次队列
 	spdlog::flush_every(std::chrono::seconds(3));
 	spdlog::set_default_logger(log);
+	spdlog::info("spdlog init finish!");
 }
 
 //单个日志记录器

@@ -24,6 +24,7 @@ ffmpeg
 qt6.4
 doctest
 spdlog
+glew
 # 工程编译
 - mkdir build
 - cd build
