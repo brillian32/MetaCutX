@@ -57,7 +57,7 @@ void ConvertAVFrameToMat(AVFrame* frame)
 
 void DisplayFrame(const cv::Mat& frame) {
 	cv::imshow("Frame", frame);
-	cv::waitKey(1);  // 等待1毫秒，以更新显示
+	cv::waitKey(100000);  // 等待1毫秒，以更新显示
 }
 DecodeVideo::DecodeVideo(std::string videoPath)
 {
@@ -65,7 +65,11 @@ DecodeVideo::DecodeVideo(std::string videoPath)
 	init();
 }
 DecodeVideo::~DecodeVideo()
-= default;
+{
+	// 释放资源
+	avformat_close_input(&m_formatContext);
+	avcodec_free_context(&m_codecContext);
+}
 
 cv::Mat AVFrame2CvMat(AVFrame *frame) {
 
@@ -83,28 +87,26 @@ cv::Mat AVFrame2CvMat(AVFrame *frame) {
 	return image;
 }
 
-void DecodeVideo::setDecodeBegin(int beginFrame)
+void DecodeVideo::setDecodeBegin(int64 beginFrame)
 {
-	AVRational time_base = formatContext->streams[videoStreamIndex]->time_base;
-	int64 targetTime = av_rescale_q(beginFrame, AV_TIME_BASE_Q,time_base);
-	av_seek_frame(formatContext, videoStreamIndex, targetTime, AVSEEK_FLAG_BACKWARD);
+	AVRational time_base = m_formatContext->streams[m_videoStreamIndex]->time_base;
+	AVRational frame_rate = m_formatContext->streams[m_videoStreamIndex]->r_frame_rate;
+
+	int64 targetTime = beginFrame/av_q2d(frame_rate)/av_q2d(time_base);
+	av_seek_frame(m_formatContext, m_videoStreamIndex, targetTime, AVSEEK_FLAG_BACKWARD);
 }
 
 void DecodeVideo::decodeVideo()
 {
-	// 初始化FFmpeg
-//	av_register_all(); 4版本后已移除
-
-	// 分配AVPacket和AVFrame
 	AVPacket* packet = av_packet_alloc();
 	AVFrame* frame = av_frame_alloc();
 
 	// 读取帧数据
-	while (av_read_frame(formatContext, packet) >= 0) {
-		if (packet->stream_index == videoStreamIndex) {
+	while (av_read_frame(m_formatContext, packet) >= 0) {
+		if (packet->stream_index == m_videoStreamIndex) {
 			// 解码帧数据
-			avcodec_send_packet(codecContext, packet);
-			while (avcodec_receive_frame(codecContext, frame) == 0) {
+			avcodec_send_packet(m_codecContext, packet);
+			while (avcodec_receive_frame(m_codecContext, frame) == 0) {
 				// 将AVFrame转换为OpenCV的Mat
 //				 ConvertAVFrameToMat(frame);
 				cv::Mat cvFrame = AVFrame2CvMat(frame);
@@ -116,9 +118,6 @@ void DecodeVideo::decodeVideo()
 		av_packet_unref(packet);
 	}
 
-	// 释放资源
-	avformat_close_input(&formatContext);
-	avcodec_free_context(&codecContext);
 	av_frame_free(&frame);
 	av_packet_free(&packet);
 }
@@ -132,49 +131,49 @@ void DecodeVideo::init()
 {
 	// 打开输入文件
 
-	if (avformat_open_input(&formatContext, m_videoPath.c_str(), nullptr, nullptr) != 0) {
+	if (avformat_open_input(&m_formatContext, m_videoPath.c_str(), nullptr, nullptr) != 0) {
 		// 处理打开文件错误
 		spdlog::log(spdlog::level::err, "打开文件失败");
 		return ;
 	}
 
 	// 查找视频流
-	for (int i = 0; i < formatContext->nb_streams; i++) {
-		if (formatContext->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_VIDEO) {
-			videoStreamIndex = i;
-			codecParameters = formatContext->streams[i]->codecpar;
+	for (int i = 0; i < m_formatContext->nb_streams; i++) {
+		if (m_formatContext->streams[i]->codecpar->codec_type == AVMEDIA_TYPE_VIDEO) {
+			m_videoStreamIndex = i;
+			m_codecParameters = m_formatContext->streams[i]->codecpar;
 			break;
 		}
 	}
 
-	if (videoStreamIndex == -1 || codecParameters == nullptr) {
+	if (m_videoStreamIndex == -1 || m_codecParameters == nullptr) {
 		// 没有找到视频流
 		spdlog::log(spdlog::level::err, "没有找到视频流");
 		return ;
 	}
 
 	// 没有找到视频流
-	const AVCodec *codec = avcodec_find_decoder(codecParameters->codec_id);
+	const AVCodec *codec = avcodec_find_decoder(m_codecParameters->codec_id);
 	if (!codec) {
 		// 没有找到解码器
 		spdlog::log(spdlog::level::err, "没有找到视频流失败1");
 		return ;
 	}
 
-	codecContext = avcodec_alloc_context3(codec);
-	if (!codecContext) {
+	m_codecContext = avcodec_alloc_context3(codec);
+	if (!m_codecContext) {
 		// 没有找到视频流
 		spdlog::log(spdlog::level::err, "没有找到视频流");
 		return ;
 	}
 
-	if (avcodec_parameters_to_context(codecContext, codecParameters) < 0) {
+	if (avcodec_parameters_to_context(m_codecContext, m_codecParameters) < 0) {
 		// 填充解码器上下文失败
 		spdlog::log(spdlog::level::err, "填充解码器上下文失败");
 		return ;
 	}
 
-	if (avcodec_open2(codecContext, codec, nullptr) < 0) {
+	if (avcodec_open2(m_codecContext, codec, nullptr) < 0) {
 		// 打开解码器失败
 		spdlog::log(spdlog::level::err, "打开解码器失败");
 		return ;
@@ -182,26 +181,26 @@ void DecodeVideo::init()
 }
 cv::Mat DecodeVideo::getFrameMat2(double percentage)
 {
-	AVRational time_base = formatContext->streams[videoStreamIndex]->time_base;
-	double duration = formatContext->streams[videoStreamIndex]->duration * av_q2d(time_base);
+	AVRational time_base = m_formatContext->streams[m_videoStreamIndex]->time_base;
+	double duration = m_formatContext->streams[m_videoStreamIndex]->duration * av_q2d(time_base);
 	double timestamp = percentage * duration;
 	int64_t pts = timestamp / av_q2d(time_base);
-	int ret = av_seek_frame(formatContext, videoStreamIndex, pts, AVSEEK_FLAG_BACKWARD);
+	int ret = av_seek_frame(m_formatContext, m_videoStreamIndex, pts, AVSEEK_FLAG_BACKWARD);
 	if (ret < 0) {
 		return cv::Mat();
 	}
 	AVPacket *pkt = av_packet_alloc();
 
 	// 读取帧数据
-	while (av_read_frame(formatContext, pkt) >= 0) {
-		if (pkt->stream_index == videoStreamIndex) {
+	while (av_read_frame(m_formatContext, pkt) >= 0) {
+		if (pkt->stream_index == m_videoStreamIndex) {
 			// 解码帧数据
-			ret = avcodec_send_packet(codecContext, pkt);
+			ret = avcodec_send_packet(m_codecContext, pkt);
 			if (ret < 0) {
 				return {};
 			}
 			AVFrame *seek_frame = av_frame_alloc();
-			while (avcodec_receive_frame(codecContext, seek_frame) == 0) {
+			while (avcodec_receive_frame(m_codecContext, seek_frame) == 0) {
 				// 将AVFrame转换为OpenCV的Mat
 //				 ConvertAVFrameToMat(frame);
 				cv::Mat cvFrame = AVFrame2CvMat(seek_frame);
@@ -216,32 +215,32 @@ cv::Mat DecodeVideo::getFrameMat2(double percentage)
 }
 double DecodeVideo::getDuration()
 {
-	AVRational time_base = formatContext->streams[videoStreamIndex]->time_base;
-	double duration = formatContext->streams[videoStreamIndex]->duration * av_q2d(time_base);
+	AVRational time_base = m_formatContext->streams[m_videoStreamIndex]->time_base;
+	double duration = m_formatContext->streams[m_videoStreamIndex]->duration * av_q2d(time_base);
 	return duration;
 }
 cv::Mat DecodeVideo::getFrameMat(int64_t frames)
 {
-	AVRational time_base = formatContext->streams[videoStreamIndex]->time_base;
-	auto cntFrames = formatContext->streams[videoStreamIndex]->nb_frames;
-	double duration = formatContext->streams[videoStreamIndex]->duration;
+	AVRational time_base = m_formatContext->streams[m_videoStreamIndex]->time_base;
+	auto cntFrames = m_formatContext->streams[m_videoStreamIndex]->nb_frames;
+	double duration = m_formatContext->streams[m_videoStreamIndex]->duration;
 	int64_t timestamp = frames*1.0/cntFrames * duration;
-	int ret = av_seek_frame(formatContext, videoStreamIndex, timestamp, AVSEEK_FLAG_BACKWARD);
+	int ret = av_seek_frame(m_formatContext, m_videoStreamIndex, timestamp, AVSEEK_FLAG_BACKWARD);
 	if (ret < 0) {
 		return cv::Mat();
 	}
 	AVPacket *pkt = av_packet_alloc();
 
 	// 读取帧数据
-	while (av_read_frame(formatContext, pkt) >= 0) {
-		if (pkt->stream_index == videoStreamIndex) {
+	while (av_read_frame(m_formatContext, pkt) >= 0) {
+		if (pkt->stream_index == m_videoStreamIndex) {
 			// 解码帧数据
-			ret = avcodec_send_packet(codecContext, pkt);
+			ret = avcodec_send_packet(m_codecContext, pkt);
 			if (ret < 0) {
 				return {};
 			}
 			AVFrame *seek_frame = av_frame_alloc();
-			while (avcodec_receive_frame(codecContext, seek_frame) == 0) {
+			while (avcodec_receive_frame(m_codecContext, seek_frame) == 0) {
 				// 将AVFrame转换为OpenCV的Mat
 //				 ConvertAVFrameToMat(frame);
 				cv::Mat cvFrame = AVFrame2CvMat(seek_frame);
@@ -252,29 +251,30 @@ cv::Mat DecodeVideo::getFrameMat(int64_t frames)
 			}
 		}
 	}
+	av_packet_unref(pkt);
 	return {};
 }
 
 cv::Mat DecodeVideo::getFrameMatAtTime(int64_t timeStamp)
 {
-	AVRational time_base = formatContext->streams[videoStreamIndex]->time_base;
+	AVRational time_base = m_formatContext->streams[m_videoStreamIndex]->time_base;
 	int64_t timestamp = timeStamp / av_q2d(time_base);
-	int ret = av_seek_frame(formatContext, videoStreamIndex, timestamp, AVSEEK_FLAG_BACKWARD);
+	int ret = av_seek_frame(m_formatContext, m_videoStreamIndex, timestamp, AVSEEK_FLAG_BACKWARD);
 	if (ret < 0) {
 		return cv::Mat();
 	}
 	AVPacket *pkt = av_packet_alloc();
 
 	// 读取帧数据
-	while (av_read_frame(formatContext, pkt) >= 0) {
-		if (pkt->stream_index == videoStreamIndex) {
+	while (av_read_frame(m_formatContext, pkt) >= 0) {
+		if (pkt->stream_index == m_videoStreamIndex) {
 			// 解码帧数据
-			ret = avcodec_send_packet(codecContext, pkt);
+			ret = avcodec_send_packet(m_codecContext, pkt);
 			if (ret < 0) {
 				return {};
 			}
 			AVFrame *seek_frame = av_frame_alloc();
-			while (avcodec_receive_frame(codecContext, seek_frame) == 0) {
+			while (avcodec_receive_frame(m_codecContext, seek_frame) == 0) {
 				// 将AVFrame转换为OpenCV的Mat
 //				 ConvertAVFrameToMat(frame);
 				cv::Mat cvFrame = AVFrame2CvMat(seek_frame);

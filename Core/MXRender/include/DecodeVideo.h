@@ -31,7 +31,7 @@ public:
 	~DecodeVideo();
 
 
-	void setDecodeBegin(int beginFrame);
+	void setDecodeBegin(int64 beginFrame);
 	void decodeVideo();
 	void setOutputFilePath(std::string path);
 	cv::Mat getFrameMat(int64_t frames);
@@ -45,11 +45,11 @@ private:
 private:
 	std::string m_videoPath;
 	std::string m_outputFilePath;
+	int m_videoStreamIndex = -1;
 
-	AVFormatContext* formatContext = nullptr;
-	int videoStreamIndex = -1;
-	AVCodecContext* codecContext = nullptr;
-	AVCodecParameters* codecParameters = nullptr;
+	AVFormatContext* m_formatContext = nullptr;
+	AVCodecContext* m_codecContext = nullptr;
+	AVCodecParameters* m_codecParameters = nullptr;
 };
 
 
