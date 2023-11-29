@@ -8,6 +8,7 @@ add_subdirectory(Core/MXUtility)
 
 add_subdirectory(Core/UnitTest)
 add_subdirectory(App/MXTimeline)
+add_subdirectory(App/MXPlayer)
 
 include_directories(Core/MXRender)
 

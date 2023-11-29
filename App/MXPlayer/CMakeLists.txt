@@ -1,20 +1,22 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(timelineEditor VERSION 0.1 LANGUAGES CXX)
+project(appPlayer VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 6.4 COMPONENTS Quick REQUIRED)
+find_package(Qt6 6.4 COMPONENTS Quick Widgets Multimedia REQUIRED)
+find_package(libyuv REQUIRED)
 
 qt_add_executable(appPlayer
         main.cpp
+        FrameProvider.h FrameProvider.cpp
         )
 
 qt_add_qml_module(appPlayer
-        URI timelineEditor
+        URI Player
         VERSION 1.0
-        QML_FILES main.qml
+        QML_FILES main.qml PlayerSlider.qml
         )
 set(viewer_resource_files
 
@@ -38,4 +40,10 @@ set_target_properties(appPlayer PROPERTIES
 target_compile_definitions(appPlayer
         PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(appPlayer
-        PRIVATE Qt6::Quick)
+        PRIVATE
+        Qt6::Quick
+        Qt6::Widgets
+        Qt6::Multimedia
+        yuv
+        MXUtility
+    )
