@@ -57,7 +57,7 @@ void ConvertAVFrameToMat(AVFrame* frame)
 
 void DisplayFrame(const cv::Mat& frame) {
 	cv::imshow("Frame", frame);
-	cv::waitKey(100000);  // 等待1毫秒，以更新显示
+	cv::waitKey(1);  // 等待1毫秒，以更新显示
 }
 DecodeVideo::DecodeVideo(std::string videoPath)
 {
@@ -75,11 +75,11 @@ cv::Mat AVFrame2CvMat(AVFrame *frame) {
 
 	int width = frame->width;
 	int height = frame->height;
-	cv::Mat image(height, width, CV_8UC3);
+	cv::Mat image(height, width, CV_8UC4);
 	int cv_lines_sizes[1];
 	cv_lines_sizes[0] = image.step1();
 	SwsContext* conversion = sws_getContext(width, height, (AVPixelFormat)frame->format,
-											width, height, AV_PIX_FMT_BGR24, SWS_FAST_BILINEAR,
+											width, height, AV_PIX_FMT_BGRA, SWS_FAST_BILINEAR,
 											nullptr, nullptr, nullptr);
 
 	sws_scale(conversion, frame->data, frame->linesize, 0, height, &image.data, cv_lines_sizes);
@@ -96,7 +96,7 @@ void DecodeVideo::setDecodeBegin(int64 beginFrame)
 	av_seek_frame(m_formatContext, m_videoStreamIndex, targetTime, AVSEEK_FLAG_BACKWARD);
 }
 
-void DecodeVideo::decodeVideo()
+void DecodeVideo::decodeVideo(std::function<void(cv::Mat&)>  getMat)
 {
 	AVPacket* packet = av_packet_alloc();
 	AVFrame* frame = av_frame_alloc();
@@ -112,6 +112,7 @@ void DecodeVideo::decodeVideo()
 				cv::Mat cvFrame = AVFrame2CvMat(frame);
 				// 显示帧
 				DisplayFrame(cvFrame);
+				getMat(cvFrame);
 			}
 		}
 

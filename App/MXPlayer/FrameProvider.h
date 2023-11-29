@@ -6,11 +6,14 @@
 #include <QObject>
 #include <QVideoSink>
 #include <QPointer>
+#include <opencv2/core/mat.hpp>
+#include "Singleton.h"
 
 class FrameProvider : public QObject
 {
 	Q_OBJECT
 	Q_PROPERTY(QVideoSink* videoSink READ videoSink WRITE setVideoSink NOTIFY videoSinkChanged)
+	DECLARE_SINGLETON(FrameProvider)
 
 public:
 	explicit FrameProvider(QObject* parent = nullptr);
@@ -23,7 +26,7 @@ signals:
 	void videoSinkChanged();
 
 public slots:
-	void deliverFrame(const QVideoFrame& frame);
+	void deliverFrame(cv::Mat frame);
 	void debug();
 
 private:

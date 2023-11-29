@@ -15,7 +15,7 @@
 #include <iostream>
 #include <GlobalDef.h>
 
-MX_API void init_spdlog(std::string log_path);
+MX_API void initSpdLog(std::string log_path);
 
 MX_API std::shared_ptr<spdlog::logger> get_async_file_logger(std::string name);
 

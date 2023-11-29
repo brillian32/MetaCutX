@@ -32,7 +32,7 @@ public:
 
 
 	void setDecodeBegin(int64 beginFrame);
-	void decodeVideo();
+	void decodeVideo(std::function<void(cv::Mat&)>  getMat);
 	void setOutputFilePath(std::string path);
 	cv::Mat getFrameMat(int64_t frames);
 	cv::Mat getFrameMat2(double percent);

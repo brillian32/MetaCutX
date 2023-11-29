@@ -4,7 +4,7 @@
 #include "MXSpdLog.h"
 
 #include <utility>
-void init_spdlog(std::string log_path)
+void initSpdLog(std::string log_path)
 {
 	//异步日志，具有8k个项目和1个后台线程的队列
 	spdlog::init_thread_pool(8192, 1);
@@ -54,13 +54,13 @@ void init_spdlog(std::string log_path)
 	//[%#] 行号
 	//[%!] 函数
 	//[%v] 实际文本
-	log->set_pattern("[%Y-%m-%d %H:%M:%S.%e] %^[%l]%$ [%t] [%s %!:%#] %v");
+	log->set_pattern("[%Y-%m-%d %H:%M:%S.%e] %^[%l]%$ [%t] [%s:%!:%#] %v");
 	//设置当出发 err 或更严重的错误时立刻刷新日志到  disk
 	log->flush_on(spdlog::level::err);
 	//3秒刷新一次队列
 	spdlog::flush_every(std::chrono::seconds(3));
 	spdlog::set_default_logger(log);
-	spdlog::info("spdlog init finish!");
+	INFO("spdlog init finish!");
 }
 
 //单个日志记录器
@@ -86,5 +86,5 @@ LogRunTime::LogRunTime(std::string name)
 }
 LogRunTime::~LogRunTime()
 {
-	spdlog::info(" <" + m_name +"> " + "Elapsed time: {:.6} seconds", m_sw);
+	INFO(" <" + m_name +"> " + "Elapsed time: {:.6} seconds", m_sw);
 }

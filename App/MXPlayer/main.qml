@@ -3,8 +3,6 @@ import QtQuick.Controls
 import QtMultimedia
 //import FrameProvider 1.0
 
-
-
 Window {
     id:rootWind
     width: 640

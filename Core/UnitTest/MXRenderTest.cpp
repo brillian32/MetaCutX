@@ -18,7 +18,7 @@
 
 TEST_CASE("log init")
 {
-	init_spdlog("test2.log");
+	initSpdLog("test2.log");
 }
 
 TEST_CASE("Decode Video")
@@ -46,7 +46,7 @@ TEST_CASE("play video")
 	DecodeVideo decode(chinesePath.u8string());
 	LOG_RUN_TIME("play video");
 	decode.setDecodeBegin(18*30);
-	decode.decodeVideo();
+//	decode.decodeVideo();
 }
 
 

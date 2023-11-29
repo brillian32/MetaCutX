@@ -5,7 +5,8 @@ message(------MXUtility------)
 find_package(spdlog CONFIG REQUIRED)
 
 add_library(${PROJECT_NAME} SHARED include/MXSpdLog.h
-        src/MXSpdLog.cpp include/GlobalDef.h)
+        src/MXSpdLog.cpp include/GlobalDef.h
+        include/Singleton.h)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ./include)
 

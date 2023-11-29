@@ -13,6 +13,8 @@
 ## UI
 ### 时间线
 ![img.png](ShowCase%2Fimg.png)
+### 播放器
+![img.png](ShowCase/img_2.png)
 # 底层
 ## 视频解码
 ![img_1.png](ShowCase%2Fimg_1.png)

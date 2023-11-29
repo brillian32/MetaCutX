@@ -5,12 +5,15 @@
 #include "QTimer"
 #include <QVideoFrame>
 #include "MXSpdLog.h"
+#include "DecodeVideo.h"
+#include <opencv2/opencv.hpp>
+#define VIDEO_FILE_PATH "/Users/brillan/Desktop/xingshan.mp4"
 
 int main(int argc, char *argv[])
 {
 	QGuiApplication app(argc, argv);
 
-	init_spdlog("player");
+	initSpdLog("player");
 	QQmlApplicationEngine engine;
 	const QUrl url(u"qrc:/Player/main.qml"_qs);
 	QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
@@ -21,14 +24,20 @@ int main(int argc, char *argv[])
 
 
 //	qmlRegisterType<FrameProvider>("FrameProvider", 1, 0, "FrameProvider");
-	auto frameProvider = new FrameProvider(&app);
-	engine.rootContext()->setContextProperty("frameProvider", frameProvider);
+
+	engine.rootContext()->setContextProperty("frameProvider", FrameProvider::Instance());
 
 	engine.load(url);
 
-	QTimer::singleShot(1000,&app,[frameProvider](){
-		frameProvider->deliverFrame(QVideoFrame());
+	DecodeVideo decode(VIDEO_FILE_PATH);
+	decode.setDecodeBegin(18*30);
+	decode.decodeVideo([](cv::Mat& mat){
+		FrameProvider::Instance()->deliverFrame(mat);
 	});
+
+//	QTimer::singleShot(1000,&app,[](){
+//		FrameProvider::Instance()->deliverFrame(QVideoFrame());
+//	});
 
 
 	return app.exec();

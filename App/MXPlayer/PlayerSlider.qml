@@ -3,7 +3,7 @@ import QtQuick.Controls
 
 Slider {
         width: parent.width
-        height: 30
+        height: 20
         id: control
         value: 10
         from: 0
@@ -17,12 +17,12 @@ Slider {
             width: control.availableWidth
             height: implicitHeight
             radius: 2
-            color: "#bdbebf"
+            color: "#353d46"
 
             Rectangle {
                 width: control.visualPosition * parent.width
                 height: parent.height
-                color: "#21be2b"
+                color: "#44f1c6"
                 radius: 2
             }
         }
@@ -30,11 +30,12 @@ Slider {
         handle: Rectangle {
             x: control.leftPadding + control.visualPosition * (control.availableWidth - width)
             y: control.topPadding + control.availableHeight / 2 - height / 2
-            implicitWidth: 26
-            implicitHeight: 26
-            radius: 13
-            color: control.pressed ? "#f0f0f0" : "#f6f6f6"
-            border.color: "#bdbebf"
+            width:  !control.hovered ?16:20
+            height: !control.hovered ?16:20
+            radius: !control.hovered ?8:10
+            color: control.hovered ? "#4f575d" : "#4f575d"
+            border.color:  control.hovered ? "#f0f8fe": "#c3cad0"
+            border.width: 2
         }
 
         onValueChanged: {

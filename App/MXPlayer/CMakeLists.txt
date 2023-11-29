@@ -35,7 +35,7 @@ set_target_properties(appPlayer PROPERTIES
         MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
         MACOSX_BUNDLE TRUE
         WIN32_EXECUTABLE TRUE
-        )
+)
 
 target_compile_definitions(appPlayer
         PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
@@ -46,4 +46,5 @@ target_link_libraries(appPlayer
         Qt6::Multimedia
         yuv
         MXUtility
+        MXRender
     )
