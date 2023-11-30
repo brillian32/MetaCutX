@@ -23,6 +23,7 @@ extern "C" {
 }
 
 #include "GlobalDef.h"
+#include "functional"
 
 class MX_API DecodeVideo
 {
@@ -32,6 +33,7 @@ public:
 
 
 	void setDecodeBegin(int64 beginFrame);
+	cv::Mat getDecodeBegin();
 	void decodeVideo(std::function<void(cv::Mat&)>  getMat);
 	void setOutputFilePath(std::string path);
 	cv::Mat getFrameMat(int64_t frames);

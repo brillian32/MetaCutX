@@ -6,8 +6,14 @@
 #include <QVideoFrame>
 #include "MXSpdLog.h"
 #include "DecodeVideo.h"
+#include "PlayController.h"
 #include <opencv2/opencv.hpp>
+
+#if WIN32
+#define VIDEO_FILE_PATH "C:\\Users\\17305\\Documents\\Wondershare\\Wondershare Filmora\\Output\\我的影片.mp4"
+#else
 #define VIDEO_FILE_PATH "/Users/brillan/Desktop/xingshan.mp4"
+#endif
 
 int main(int argc, char *argv[])
 {
@@ -23,22 +29,11 @@ int main(int argc, char *argv[])
 		}, Qt::QueuedConnection);
 
 
-//	qmlRegisterType<FrameProvider>("FrameProvider", 1, 0, "FrameProvider");
-
+	qmlRegisterType<PlayController>("MXPlayController", 1, 0, "PlayController");
+//	qmlRegisterSingletonType<PlayController>("MXPlayController", 1, 0, "PlayController",getPlayController);
 	engine.rootContext()->setContextProperty("frameProvider", FrameProvider::Instance());
 
 	engine.load(url);
-
-	DecodeVideo decode(VIDEO_FILE_PATH);
-	decode.setDecodeBegin(18*30);
-	decode.decodeVideo([](cv::Mat& mat){
-		FrameProvider::Instance()->deliverFrame(mat);
-	});
-
-//	QTimer::singleShot(1000,&app,[](){
-//		FrameProvider::Instance()->deliverFrame(QVideoFrame());
-//	});
-
 
 	return app.exec();
 }

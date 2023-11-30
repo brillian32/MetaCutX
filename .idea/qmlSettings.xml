@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="QmlSettings">
+    <option name="mySettingsPerProfile">
+      <map>
+        <entry key="">
+          <value>
+            <PerProfileState>
+              <option name="myCustomQmlPath" value="E:\Qt6\6.4.3\msvc2019_64\qml" />
+              <option name="myCustomQtBinPath" value="E:\Qt6\6.4.3\msvc2019_64\bin" />
+              <option name="myLSPEnabled" value="true" />
+              <option name="myLSPCompletionEnabled" value="true" />
+            </PerProfileState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

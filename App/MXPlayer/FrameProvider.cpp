@@ -17,9 +17,17 @@ QVideoFrame  FrameProvider::imageToVideoFrame(const QImage &img)
 	QVideoFrameFormat fmt( img.size(), QVideoFrameFormat::Format_RGBX8888 );
 	QVideoFrame vf( fmt );
 	vf.map( QVideoFrame::WriteOnly );
-//	libyuv::ARGBToYUY2( (const uint8_t*) img.bits(), img.bytesPerLine(), vf.bits( 0 ),
-//				   vf.bytesPerLine( 0 ), img.width(), img.height() );
 	memcpy(vf.bits(0),(void *)img.bits(), vf.bytesPerLine(0)*vf.height());
+	vf.unmap();
+	return vf;
+}
+
+QVideoFrame  FrameProvider::matToVideoFrame(cv::Mat mat)
+{
+	QVideoFrameFormat fmt(QSize(mat.cols, mat.rows), QVideoFrameFormat::Format_BGRA8888);
+	QVideoFrame vf( fmt );
+	vf.map( QVideoFrame::WriteOnly );
+	memcpy(vf.bits(0),(void *)mat.data, mat.cols*mat.rows*mat.channels());
 	vf.unmap();
 	return vf;
 }
@@ -98,10 +106,8 @@ QImage MatToQImage(const cv::Mat& mat)
 void FrameProvider::deliverFrame(cv::Mat mat) {
 	if (m_videoSink.isNull())
 		return;
-	INFO("FrameProvider::deliverFrame");
-	QImage image(2000, 1000, QImage::Format_RGBA8888);
-	image.fill(QColor(0, 255, 0, 10));
-	auto frame2 =imageToVideoFrame(MatToQImage(mat));
+//	LOG_RUN_TIME("deliverFrame");
+	auto frame2 = matToVideoFrame(mat);
 	m_videoSink->setVideoFrame(frame2);
 }
 

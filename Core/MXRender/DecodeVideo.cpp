@@ -18,7 +18,7 @@ extern "C" {
 #include <libavutil/samplefmt.h>
 #include "libavformat/avio.h"
 }
-#include "spdlog/spdlog.h"
+#include "MXSpdLog.h"
 
 // 创建Mat对象，并分配数据和行指针
 void ConvertAVFrameToMat(AVFrame* frame)
@@ -56,8 +56,8 @@ void ConvertAVFrameToMat(AVFrame* frame)
 }
 
 void DisplayFrame(const cv::Mat& frame) {
-	cv::imshow("Frame", frame);
-	cv::waitKey(1);  // 等待1毫秒，以更新显示
+//	cv::imshow("Frame", frame);
+//	cv::waitKey(1);  // 等待1毫秒，以更新显示
 }
 DecodeVideo::DecodeVideo(std::string videoPath)
 {
@@ -92,7 +92,7 @@ void DecodeVideo::setDecodeBegin(int64 beginFrame)
 	AVRational time_base = m_formatContext->streams[m_videoStreamIndex]->time_base;
 	AVRational frame_rate = m_formatContext->streams[m_videoStreamIndex]->r_frame_rate;
 
-	int64 targetTime = beginFrame/av_q2d(frame_rate)/av_q2d(time_base);
+	int64 targetTime = (double)beginFrame/(double)av_q2d(frame_rate)/(double)av_q2d(time_base);
 	av_seek_frame(m_formatContext, m_videoStreamIndex, targetTime, AVSEEK_FLAG_BACKWARD);
 }
 
@@ -115,7 +115,6 @@ void DecodeVideo::decodeVideo(std::function<void(cv::Mat&)>  getMat)
 				getMat(cvFrame);
 			}
 		}
-
 		av_packet_unref(packet);
 	}
 
@@ -287,6 +286,32 @@ cv::Mat DecodeVideo::getFrameMatAtTime(int64_t timeStamp)
 		}
 	}
 	av_packet_unref(pkt);
+	return {};
+}
+cv::Mat DecodeVideo::getDecodeBegin()
+{
+	AVPacket* packet = av_packet_alloc();
+	AVFrame* frame = av_frame_alloc();
+
+	// 读取帧数据
+	while (av_read_frame(m_formatContext, packet) >= 0) {
+		if (packet->stream_index == m_videoStreamIndex) {
+			// 解码帧数据
+			avcodec_send_packet(m_codecContext, packet);
+			while (avcodec_receive_frame(m_codecContext, frame) == 0) {
+				// 将AVFrame转换为OpenCV的Mat
+//				 ConvertAVFrameToMat(frame);
+				cv::Mat cvFrame = AVFrame2CvMat(frame);
+				// 显示帧
+				DisplayFrame(cvFrame);
+				return cvFrame;
+			}
+		}
+		av_packet_unref(packet);
+	}
+
+	av_frame_free(&frame);
+	av_packet_free(&packet);
 	return {};
 }
 

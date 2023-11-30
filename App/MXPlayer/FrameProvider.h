@@ -30,9 +30,12 @@ public slots:
 	void debug();
 
 private:
-
 	QVideoFrame imageToVideoFrame(const QImage &image);
+	QVideoFrame matToVideoFrame(cv::Mat mat);
+
+
 	QPointer<QVideoSink> m_videoSink;
+
 
 };
 
