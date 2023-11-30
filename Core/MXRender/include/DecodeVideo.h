@@ -33,7 +33,7 @@ public:
 
 
 	void setDecodeBegin(int64 beginFrame);
-	cv::Mat getDecodeBegin();
+	cv::Mat getDecodeBegin(std::function<void(cv::Mat&)>  getMat);
 	void decodeVideo(std::function<void(cv::Mat&)>  getMat);
 	void setOutputFilePath(std::string path);
 	cv::Mat getFrameMat(int64_t frames);

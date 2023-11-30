@@ -93,7 +93,10 @@ void DecodeVideo::setDecodeBegin(int64 beginFrame)
 	AVRational frame_rate = m_formatContext->streams[m_videoStreamIndex]->r_frame_rate;
 
 	int64 targetTime = (double)beginFrame/(double)av_q2d(frame_rate)/(double)av_q2d(time_base);
-	av_seek_frame(m_formatContext, m_videoStreamIndex, targetTime, AVSEEK_FLAG_BACKWARD);
+	auto ret = av_seek_frame(m_formatContext, m_videoStreamIndex, targetTime,  AVSEEK_FLAG_BACKWARD);
+	if (ret < 0) {
+		ERROR("seek frame error");
+	}
 }
 
 void DecodeVideo::decodeVideo(std::function<void(cv::Mat&)>  getMat)
@@ -288,11 +291,11 @@ cv::Mat DecodeVideo::getFrameMatAtTime(int64_t timeStamp)
 	av_packet_unref(pkt);
 	return {};
 }
-cv::Mat DecodeVideo::getDecodeBegin()
+cv::Mat DecodeVideo::getDecodeBegin(std::function<void(cv::Mat&)>  getMat)
 {
 	AVPacket* packet = av_packet_alloc();
 	AVFrame* frame = av_frame_alloc();
-
+	int cnt = 0;
 	// 读取帧数据
 	while (av_read_frame(m_formatContext, packet) >= 0) {
 		if (packet->stream_index == m_videoStreamIndex) {
@@ -304,14 +307,21 @@ cv::Mat DecodeVideo::getDecodeBegin()
 				cv::Mat cvFrame = AVFrame2CvMat(frame);
 				// 显示帧
 				DisplayFrame(cvFrame);
-				return cvFrame;
+
+
+				getMat(cvFrame);
+				cnt++;
+				if (cnt > 300) {
+					av_frame_free(&frame);
+					av_packet_free(&packet);
+					return cvFrame;
+				}
 			}
 		}
-		av_packet_unref(packet);
 	}
 
 	av_frame_free(&frame);
 	av_packet_free(&packet);
-	return {};
+//	return {};
 }
 
