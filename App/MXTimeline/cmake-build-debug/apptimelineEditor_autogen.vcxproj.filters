@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\cd03bdedbb1d7f173f145e8f4a204f99\apptimelineEditor_qmlcache_loader.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\dc6868842de738880b3cd7cf5cae0236\apptimelineEditor_autogen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\apptimelineEditor_autogen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F9EAE367-B9D0-3EEA-8A65-9EF1FDED51C1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

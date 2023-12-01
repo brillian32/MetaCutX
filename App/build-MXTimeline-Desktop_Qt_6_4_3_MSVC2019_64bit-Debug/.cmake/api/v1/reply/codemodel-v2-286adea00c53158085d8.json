@@ -1,0 +1,159 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "timelineEditor",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-8cfbe618c2fc0965ddf1.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-cfa86eddfa47d79706b2.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-61a33c784cdbe5e88f26.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptimelineEditor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptimelineEditor-Debug-319649ddd637807d207c.json",
+					"name" : "apptimelineEditor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptimelineEditor_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptimelineEditor_autogen-Debug-367442d038cb67602607.json",
+					"name" : "apptimelineEditor_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptimelineEditor_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptimelineEditor_autogen_timestamp_deps-Debug-5b0a0bbdf796e5655bae.json",
+					"name" : "apptimelineEditor_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptimelineEditor_other_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptimelineEditor_other_files-Debug-0f18ca3b12d658dd975e.json",
+					"name" : "apptimelineEditor_other_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptimelineEditor_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptimelineEditor_qmlimportscan-Debug-93aaf5afa2954c383b7f.json",
+					"name" : "apptimelineEditor_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptimelineEditor_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptimelineEditor_qmllint-Debug-60c3fef56012db749e6b.json",
+					"name" : "apptimelineEditor_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptimelineEditor_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptimelineEditor_qmllint_json-Debug-9e13f5bf8bada6da8535.json",
+					"name" : "apptimelineEditor_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptimelineEditor_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptimelineEditor_qmltyperegistration-Debug-d829c152f01848d60452.json",
+					"name" : "apptimelineEditor_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "apptimelineEditor_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apptimelineEditor_tooling-Debug-49c8593b96dc4f6dafef.json",
+					"name" : "apptimelineEditor_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug",
+		"source" : "E:/GithubProject/MetaCutX/App/MXTimeline"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

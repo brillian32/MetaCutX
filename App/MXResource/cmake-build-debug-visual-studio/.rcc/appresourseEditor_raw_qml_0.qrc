@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/resourseEditor/">
+    <file alias="main.qml">E:/GithubProject/MetaCutX/App/MXResourse/main.qml</file>
+  </qresource>
+</RCC>
+

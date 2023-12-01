@@ -4,11 +4,34 @@
     <option name="myCurrentProfile" value="Debug" />
     <option name="mySettingsPerProfile">
       <map>
+        <entry key="">
+          <value>
+            <PerProfileState>
+              <option name="myCustomQmlPath" value="D:\Qt6\Examples" />
+            </PerProfileState>
+          </value>
+        </entry>
         <entry key="Debug">
           <value>
             <PerProfileState>
-              <option name="myQmlPath" value="$USER_HOME$/Qt/6.4.3/macos/./qml" />
-              <option name="myQtBinPath" value="$USER_HOME$/Qt/6.4.3/macos/bin" />
+              <option name="myQmlPath" value="D:/Qt6/6.4.3/msvc2019_64/./qml" />
+              <option name="myQtBinPath" value="D:/Qt6/6.4.3/msvc2019_64/bin" />
+            </PerProfileState>
+          </value>
+        </entry>
+        <entry key="Debug-Visual Studio-event-trace">
+          <value>
+            <PerProfileState>
+              <option name="myQmlPath" value="D:/Qt6/6.4.3/msvc2019_64/./qml" />
+              <option name="myQtBinPath" value="D:/Qt6/6.4.3/msvc2019_64/bin" />
+            </PerProfileState>
+          </value>
+        </entry>
+        <entry key="Debug-event-trace">
+          <value>
+            <PerProfileState>
+              <option name="myQmlPath" value="D:/Qt6/6.4.3/msvc2019_64/./qml" />
+              <option name="myQtBinPath" value="D:/Qt6/6.4.3/msvc2019_64/bin" />
             </PerProfileState>
           </value>
         </entry>

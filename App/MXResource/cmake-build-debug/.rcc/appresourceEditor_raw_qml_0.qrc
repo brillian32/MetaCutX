@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/resourceEditor/">
+    <file alias="main.qml">E:/GithubProject/MetaCutX/App/MXResource/main.qml</file>
+    <file alias="Libriry.qml">E:/GithubProject/MetaCutX/App/MXResource/Libriry.qml</file>
+    <file alias="Tools.qml">E:/GithubProject/MetaCutX/App/MXResource/Tools.qml</file>
+    <file alias="SearchLine.qml">E:/GithubProject/MetaCutX/App/MXResource/SearchLine.qml</file>
+    <file alias="ShowArea.qml">E:/GithubProject/MetaCutX/App/MXResource/ShowArea.qml</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,24 @@
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\E10AB634A82CE3DAB9A02AB8B718DA1A\MAIN.QML.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXResource
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy E:/GithubProject/MetaCutX/App/MXResource/main.qml E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/resourceEditor/main.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKELISTS.TXT
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -SE:/GithubProject/MetaCutX/App/MXResource -BE:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio --check-stamp-file E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,43 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"App/MXTimeline/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "apptimelineEditor::@a25c0ed3342907a40e18"
+		},
+		{
+			"id" : "apptimelineEditor_tooling::@a25c0ed3342907a40e18"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "CMakePredefinedTargets"
+	},
+	"id" : "ALL_BUILD::@a25c0ed3342907a40e18",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : "App/MXTimeline",
+		"source" : "App/MXTimeline"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

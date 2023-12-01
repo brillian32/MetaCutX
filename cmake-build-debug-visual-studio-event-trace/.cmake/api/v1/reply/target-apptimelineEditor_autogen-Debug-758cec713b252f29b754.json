@@ -1,0 +1,79 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"App/MXTimeline/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "apptimelineEditor_qmlimportscan::@a25c0ed3342907a40e18"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "apptimelineEditor_tooling::@a25c0ed3342907a40e18"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "apptimelineEditor_autogen::@a25c0ed3342907a40e18",
+	"isGeneratorProvided" : true,
+	"name" : "apptimelineEditor_autogen",
+	"paths" : 
+	{
+		"build" : "App/MXTimeline",
+		"source" : "App/MXTimeline"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio-event-trace/App/MXTimeline/CMakeFiles/apptimelineEditor_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio-event-trace/CMakeFiles/cc859f0ebd96cc6bad88685cd442b1ae/apptimelineEditor_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio-event-trace/CMakeFiles/1fb0dd0e044b20b4e82fe77b21a86f16/apptimelineEditor_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

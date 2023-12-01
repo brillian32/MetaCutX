@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake
+D:/vcpkg/installed/x64-windows/share/fmt/fmt-config-version.cmake
+D:/vcpkg/installed/x64-windows/share/fmt/fmt-config.cmake
+D:/vcpkg/installed/x64-windows/share/fmt/fmt-targets-debug.cmake
+D:/vcpkg/installed/x64-windows/share/fmt/fmt-targets-release.cmake
+D:/vcpkg/installed/x64-windows/share/fmt/fmt-targets.cmake
+D:/vcpkg/installed/x64-windows/share/spdlog/spdlogConfig.cmake
+D:/vcpkg/installed/x64-windows/share/spdlog/spdlogConfigTargets-debug.cmake
+D:/vcpkg/installed/x64-windows/share/spdlog/spdlogConfigTargets-release.cmake
+D:/vcpkg/installed/x64-windows/share/spdlog/spdlogConfigTargets.cmake
+D:/vcpkg/installed/x64-windows/share/spdlog/spdlogConfigVersion.cmake
+E:/GithubProject/MetaCutX/Core/MXUtility/CMakeLists.txt

@@ -1,0 +1,80 @@
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\C36001BD9B0F43A8449B952474411FAE\QT6APPRESOURCEEDITOR_METATYPES.JSON.GEN.RULE
+setlocal
+D:\Qt6\6.4.3\msvc2019_64\.\bin\moc.exe -o E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/meta_types/qt6appresourceeditor_metatypes.json.gen --collect-json @E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/meta_types/appresourceEditor_json_file_list.txt
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy_if_different E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/meta_types/qt6appresourceeditor_metatypes.json.gen E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/meta_types/qt6appresourceeditor_metatypes.json
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\0C68560B0410EBC7C6200CD8475E08C0\APPRESOURCEEDITOR_QMLTYPEREGISTRATIONS.CPP.RULE
+setlocal
+call .qt\bin\qt_setup_tool_path.bat D:/Qt6/6.4.3/msvc2019_64/./bin/qmltyperegistrar.exe --generate-qmltypes=E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/resourceEditor/appresourceEditor.qmltypes --import-name=resourceEditor --major-version=1 --minor-version=0 @E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/qmltypes/appresourceEditor_foreign_types.txt -o E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/appresourceeditor_qmltyperegistrations.cpp E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/meta_types/qt6appresourceeditor_metatypes.json
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E make_directory E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.generated
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E touch E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.generated/appresourceEditor.qmltypes
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs E:/GithubProject/MetaCutX/App/MXResource E:/GithubProject/MetaCutX/App/MXResource E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/qmltypes/appresourceeditor_qmltyperegistrations.cpp.d E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/CMakeFiles/d/6edcc972269e24b42e111eaa07b69e4ef14c56cda0a7adc39cd52a1d6f0254b2.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\65C9A2AAECD453FA57946F52EAC55E39\QRC_QMAKE_RESOURCEEDITOR.CPP.RULE
+setlocal
+D:\Qt6\6.4.3\msvc2019_64\.\bin\rcc.exe --output E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/qrc_qmake_resourceEditor.cpp --name qmake_resourceEditor E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/qmake_resourceEditor.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\DB8A7B9DAC3D1722D958C6AF0F6F0807\APPRESOURCEEDITOR_MAIN_QML.CPP.RULE
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E make_directory E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/qmlcache
+if %errorlevel% neq 0 goto :cmEnd
+call .qt\bin\qt_setup_tool_path.bat D:/Qt6/6.4.3/msvc2019_64/./bin/qmlcachegen.exe --bare --resource-path /resourceEditor/main.qml -I E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio -I D:/Qt6/6.4.3/msvc2019_64/./qml -i E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/resourceEditor/qmldir --resource E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/qmake_resourceEditor.qrc --resource E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/appresourceEditor_raw_qml_0.qrc --resource E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/viewer.qrc -o E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/qmlcache/appresourceEditor_main_qml.cpp E:/GithubProject/MetaCutX/App/MXResource/main.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\65C9A2AAECD453FA57946F52EAC55E39\QRC_APPRESOURCEEDITOR_RAW_QML_0.CPP.RULE
+setlocal
+D:\Qt6\6.4.3\msvc2019_64\.\bin\rcc.exe --output E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/qrc_appresourceEditor_raw_qml_0.cpp --name appresourceEditor_raw_qml_0 E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/appresourceEditor_raw_qml_0.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\65C9A2AAECD453FA57946F52EAC55E39\QRC_VIEWER.CPP.RULE
+setlocal
+D:\Qt6\6.4.3\msvc2019_64\.\bin\rcc.exe --output E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/qrc_viewer.cpp --name viewer E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/viewer.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKELISTS.TXT
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -SE:/GithubProject/MetaCutX/App/MXResource -BE:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio --check-stamp-file E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

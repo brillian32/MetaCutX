@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\0395a3eb5c7d63614e47e66649b1886b\main.qml.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\0395a3eb5c7d63614e47e66649b1886b\TimeScale.qml.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\0395a3eb5c7d63614e47e66649b1886b\TrackHead.qml.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\0395a3eb5c7d63614e47e66649b1886b\Clip.qml.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\timelineEditor\main.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\timelineEditor\TimeScale.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\timelineEditor\TrackHead.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\timelineEditor\Clip.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F9EAE367-B9D0-3EEA-8A65-9EF1FDED51C1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,32 @@
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\15C60A0A25C91884ED38058C352D2ADC\QT6_QMLPLUGINS_IMPORTS_APPRESOURSEEDITOR.CMAKE.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXResource
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+call E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\.qt\bin\qt_setup_tool_path.bat D:/Qt6/6.4.3/msvc2019_64/./bin/qmlimportscanner.exe @E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXResource/.qt_plugins/Qt6_QmlPlugins_Imports_appresourseEditor.rsp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\638528FA9021AA80705F10DF6D49D860\APPRESOURSEEDITOR_QMLIMPORTSCAN.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKELISTS.TXT
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -SE:/GithubProject/MetaCutX -BE:/GithubProject/MetaCutX/cmake-build-debug-visual-studio --check-stamp-file E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXResource/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

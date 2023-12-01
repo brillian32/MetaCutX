@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
 	MXRenderTest test;
 	test.test();
-	DecodeVideo decode("/Users/brillan/Desktop/xingshan.mp4");
+	DecodeVideo decode("C:\\Users\\16940\\20231121_112745.mp4");
 	decode.setOutputFilePath("/Users/brillan/Desktop/1");
 	decode.decodeVideo();
 	return 0;

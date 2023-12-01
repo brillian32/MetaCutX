@@ -1,0 +1,14 @@
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor_automoc_json_extraction.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor_qmltyperegistration.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/all_qmltyperegistrations.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor_other_files.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor_qmllint.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor_qmllint_json.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/all_qmllint.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/all_qmllint_json.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor_tooling.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor_qmlimportscan.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor_autogen.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/ALL_BUILD.dir
+E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/ZERO_CHECK.dir

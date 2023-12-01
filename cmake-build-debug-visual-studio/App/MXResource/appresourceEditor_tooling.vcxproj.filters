@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\CMakeFiles\6f7e2f390fcc58e1eab1278d2d3504cf\main.qml.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\App\MXResource\resourceEditor\main.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F222541C-F407-31C1-A1DE-AA1D04A18960}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

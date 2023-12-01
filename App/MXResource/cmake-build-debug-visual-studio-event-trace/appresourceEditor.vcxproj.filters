@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\appresourceEditor_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\appresourceeditor_qmltyperegistrations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\.rcc\qrc_qmake_resourceEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\.rcc\qmlcache\appresourceEditor_qmlcache_loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\.rcc\qmlcache\appresourceEditor_main_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\.rcc\qmlcache\appresourceEditor_libriry_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\.rcc\qmlcache\appresourceEditor_tools_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\.rcc\qmlcache\appresourceEditor_searchLine_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\.rcc\qmlcache\appresourceEditor_showArea_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\.rcc\qrc_appresourceEditor_raw_qml_0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\.rcc\qrc_viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\appresourceEditor_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\appresourceEditor_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\appresourceEditor_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\ddf_appresourceEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\CMakeFiles\abd83ac99657abbbff4833691df5033e\qt6appresourceeditor_metatypes.json.gen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\CMakeFiles\7c68def87d857d2a8acaf488e6018d5f\appresourceeditor_qmltyperegistrations.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\CMakeFiles\67037f1b1121636dab824b57e434579a\qrc_qmake_resourceEditor.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\CMakeFiles\b1086d8c1c655316a3c67e656c44d5aa\appresourceEditor_main_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\CMakeFiles\b1086d8c1c655316a3c67e656c44d5aa\appresourceEditor_libriry_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\CMakeFiles\b1086d8c1c655316a3c67e656c44d5aa\appresourceEditor_tools_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\CMakeFiles\b1086d8c1c655316a3c67e656c44d5aa\appresourceEditor_searchLine_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\CMakeFiles\b1086d8c1c655316a3c67e656c44d5aa\appresourceEditor_showArea_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\CMakeFiles\67037f1b1121636dab824b57e434579a\qrc_appresourceEditor_raw_qml_0.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\CMakeFiles\67037f1b1121636dab824b57e434579a\qrc_viewer.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio-event-trace\meta_types\qt6appresourceeditor_metatypes.json.gen" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\main.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\libriry.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\tools.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\searchLine.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\showArea.qml" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6core_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6qml_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6network_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6quick_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6gui_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6qmlmodels_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6opengl_metatypes.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1B1314E5-52FE-3454-8EF3-CFDED193613B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F2BA882E-DB24-3615-B7DE-C7F7D07FF514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DE8AC38E-FD93-3C69-A30A-0B4FA2652C02}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/resourceEditor">
+    <file alias="qmldir">E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/resourceEditor/qmldir</file>
+  </qresource>
+</RCC>
+

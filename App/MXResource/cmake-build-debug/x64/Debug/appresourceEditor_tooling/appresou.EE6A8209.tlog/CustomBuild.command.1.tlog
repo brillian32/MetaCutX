@@ -1,0 +1,80 @@
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG\CMAKEFILES\98AF2C4E716ADD7509FEF8150E9528E8\MAIN.QML.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXResource
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy E:/GithubProject/MetaCutX/App/MXResource/main.qml E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/resourceEditor/main.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG\CMAKEFILES\98AF2C4E716ADD7509FEF8150E9528E8\LIBRIRY.QML.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXResource
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy E:/GithubProject/MetaCutX/App/MXResource/libriry.qml E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/resourceEditor/Libriry.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG\CMAKEFILES\98AF2C4E716ADD7509FEF8150E9528E8\TOOLS.QML.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXResource
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy E:/GithubProject/MetaCutX/App/MXResource/tools.qml E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/resourceEditor/Tools.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG\CMAKEFILES\98AF2C4E716ADD7509FEF8150E9528E8\SEARCHLINE.QML.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXResource
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy E:/GithubProject/MetaCutX/App/MXResource/searchLine.qml E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/resourceEditor/SearchLine.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG\CMAKEFILES\98AF2C4E716ADD7509FEF8150E9528E8\SHOWAREA.QML.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXResource
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy E:/GithubProject/MetaCutX/App/MXResource/showArea.qml E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/resourceEditor/ShowArea.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKELISTS.TXT
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -SE:/GithubProject/MetaCutX/App/MXResource -BE:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug --check-stamp-file E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

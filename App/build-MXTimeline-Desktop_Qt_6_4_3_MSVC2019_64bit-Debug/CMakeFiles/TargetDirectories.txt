@@ -1,0 +1,14 @@
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/apptimelineEditor.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/apptimelineEditor_qmltyperegistration.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/all_qmltyperegistrations.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/apptimelineEditor_other_files.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/apptimelineEditor_qmllint.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/apptimelineEditor_qmllint_json.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/all_qmllint.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/all_qmllint_json.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/apptimelineEditor_tooling.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/apptimelineEditor_qmlimportscan.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/edit_cache.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/rebuild_cache.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/apptimelineEditor_autogen_timestamp_deps.dir
+E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/apptimelineEditor_autogen.dir

@@ -1,0 +1,116 @@
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\97D381F9FF41B570E4D44BC3819A5A60\QT6APPTIMELINEEDITOR_METATYPES.JSON.GEN.RULE
+setlocal
+D:\Qt6\6.4.3\msvc2019_64\.\bin\moc.exe -o E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/meta_types/qt6apptimelineeditor_metatypes.json.gen --collect-json @E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/meta_types/apptimelineEditor_json_file_list.txt
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy_if_different E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/meta_types/qt6apptimelineeditor_metatypes.json.gen E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/meta_types/qt6apptimelineeditor_metatypes.json
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\CB2CBCAF8D787912978802F85CF4A289\APPTIMELINEEDITOR_QMLTYPEREGISTRATIONS.CPP.RULE
+setlocal
+call ..\..\.qt\bin\qt_setup_tool_path.bat D:/Qt6/6.4.3/msvc2019_64/./bin/qmltyperegistrar.exe --generate-qmltypes=E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/timelineEditor/apptimelineEditor.qmltypes --import-name=timelineEditor --major-version=1 --minor-version=0 @E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/qmltypes/apptimelineEditor_foreign_types.txt -o E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/apptimelineeditor_qmltyperegistrations.cpp E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/meta_types/qt6apptimelineeditor_metatypes.json
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E make_directory E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.generated
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E touch E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.generated/apptimelineEditor.qmltypes
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E cmake_transform_depfile "Visual Studio 17 2022" MSBuildAdditionalInputs E:/GithubProject/MetaCutX E:/GithubProject/MetaCutX/App/MXTimeline E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/qmltypes/apptimelineeditor_qmltyperegistrations.cpp.d E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/CMakeFiles/d/46fd75b1d670dee6bb3e3ae9b12e1a71f2e88d8a37d823971d9f13750346b76c.AdditionalInputs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\707E72EB0F0E7CD6D0670C0D0612C114\QRC_QMAKE_TIMELINEEDITOR.CPP.RULE
+setlocal
+D:\Qt6\6.4.3\msvc2019_64\.\bin\rcc.exe --output E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qrc_qmake_timelineEditor.cpp --name qmake_timelineEditor E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmake_timelineEditor.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\2C13A31125F133EC6C6539FDB120DD31\APPTIMELINEEDITOR_MAIN_QML.CPP.RULE
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E make_directory E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmlcache
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\.qt\bin\qt_setup_tool_path.bat D:/Qt6/6.4.3/msvc2019_64/./bin/qmlcachegen.exe --bare --resource-path /timelineEditor/main.qml -I E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline -I D:/Qt6/6.4.3/msvc2019_64/./qml -i E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/timelineEditor/qmldir --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmake_timelineEditor.qrc --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/apptimelineEditor_raw_qml_0.qrc --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/viewer.qrc -o E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmlcache/apptimelineEditor_main_qml.cpp E:/GithubProject/MetaCutX/App/MXTimeline/main.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\2C13A31125F133EC6C6539FDB120DD31\APPTIMELINEEDITOR_TIMESCALE_QML.CPP.RULE
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E make_directory E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmlcache
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\.qt\bin\qt_setup_tool_path.bat D:/Qt6/6.4.3/msvc2019_64/./bin/qmlcachegen.exe --bare --resource-path /timelineEditor/TimeScale.qml -I E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline -I D:/Qt6/6.4.3/msvc2019_64/./qml -i E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/timelineEditor/qmldir --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmake_timelineEditor.qrc --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/apptimelineEditor_raw_qml_0.qrc --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/viewer.qrc -o E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmlcache/apptimelineEditor_TimeScale_qml.cpp E:/GithubProject/MetaCutX/App/MXTimeline/TimeScale.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\2C13A31125F133EC6C6539FDB120DD31\APPTIMELINEEDITOR_TRACKHEAD_QML.CPP.RULE
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E make_directory E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmlcache
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\.qt\bin\qt_setup_tool_path.bat D:/Qt6/6.4.3/msvc2019_64/./bin/qmlcachegen.exe --bare --resource-path /timelineEditor/TrackHead.qml -I E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline -I D:/Qt6/6.4.3/msvc2019_64/./qml -i E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/timelineEditor/qmldir --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmake_timelineEditor.qrc --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/apptimelineEditor_raw_qml_0.qrc --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/viewer.qrc -o E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmlcache/apptimelineEditor_TrackHead_qml.cpp E:/GithubProject/MetaCutX/App/MXTimeline/TrackHead.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\2C13A31125F133EC6C6539FDB120DD31\APPTIMELINEEDITOR_CLIP_QML.CPP.RULE
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E make_directory E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmlcache
+if %errorlevel% neq 0 goto :cmEnd
+call ..\..\.qt\bin\qt_setup_tool_path.bat D:/Qt6/6.4.3/msvc2019_64/./bin/qmlcachegen.exe --bare --resource-path /timelineEditor/Clip.qml -I E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline -I D:/Qt6/6.4.3/msvc2019_64/./qml -i E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/timelineEditor/qmldir --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmake_timelineEditor.qrc --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/apptimelineEditor_raw_qml_0.qrc --resource E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/viewer.qrc -o E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qmlcache/apptimelineEditor_Clip_qml.cpp E:/GithubProject/MetaCutX/App/MXTimeline/Clip.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\707E72EB0F0E7CD6D0670C0D0612C114\QRC_APPTIMELINEEDITOR_RAW_QML_0.CPP.RULE
+setlocal
+D:\Qt6\6.4.3\msvc2019_64\.\bin\rcc.exe --output E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qrc_apptimelineEditor_raw_qml_0.cpp --name apptimelineEditor_raw_qml_0 E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/apptimelineEditor_raw_qml_0.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\707E72EB0F0E7CD6D0670C0D0612C114\QRC_VIEWER.CPP.RULE
+setlocal
+D:\Qt6\6.4.3\msvc2019_64\.\bin\rcc.exe --output E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/qrc_viewer.cpp --name viewer E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/.rcc/viewer.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXTIMELINE\CMAKELISTS.TXT
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -SE:/GithubProject/MetaCutX -BE:/GithubProject/MetaCutX/cmake-build-debug-visual-studio --check-stamp-file E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

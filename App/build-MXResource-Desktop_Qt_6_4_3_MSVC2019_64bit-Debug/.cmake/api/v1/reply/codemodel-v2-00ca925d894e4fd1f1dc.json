@@ -1,0 +1,159 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "resourceEditor",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-ccd619e6ba9278062662.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-b7e2d34029ae6fa2dd29.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-68cf2a7691d816ca6b95.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor-Debug-4c548e89a918fc322bb0.json",
+					"name" : "appresourceEditor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_autogen-Debug-a0d12448cf82c0a39dbd.json",
+					"name" : "appresourceEditor_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_autogen_timestamp_deps-Debug-c6bbe82d851167cbf840.json",
+					"name" : "appresourceEditor_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_other_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_other_files-Debug-d0df7c0eb7b3863c8d6a.json",
+					"name" : "appresourceEditor_other_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmlimportscan-Debug-7260c8ea7a38046af768.json",
+					"name" : "appresourceEditor_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmllint-Debug-aa9c5cf94172cce65680.json",
+					"name" : "appresourceEditor_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmllint_json-Debug-cc9a333f6a3fb213c984.json",
+					"name" : "appresourceEditor_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmltyperegistration-Debug-112c7cfefa53a55a7613.json",
+					"name" : "appresourceEditor_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_tooling-Debug-cbf318a1fc5e9a0a27f1.json",
+					"name" : "appresourceEditor_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug",
+		"source" : "E:/GithubProject/MetaCutX/App/MXResource"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

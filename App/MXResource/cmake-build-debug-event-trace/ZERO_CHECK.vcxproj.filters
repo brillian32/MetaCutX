@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-event-trace\CMakeFiles\6d9ca31bde1b7512ff19ddb4a9996f10\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DB5958FB-4396-36EA-A8CC-714972106D55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

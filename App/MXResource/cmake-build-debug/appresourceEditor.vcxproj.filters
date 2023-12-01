@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\appresourceEditor_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\appresourceeditor_qmltyperegistrations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\.rcc\qrc_qmake_resourceEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\.rcc\qmlcache\appresourceEditor_qmlcache_loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\.rcc\qmlcache\appresourceEditor_main_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\.rcc\qmlcache\appresourceEditor_libriry_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\.rcc\qmlcache\appresourceEditor_tools_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\.rcc\qmlcache\appresourceEditor_searchLine_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\.rcc\qmlcache\appresourceEditor_showArea_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\.rcc\qrc_appresourceEditor_raw_qml_0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\.rcc\qrc_viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\appresourceEditor_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\appresourceEditor_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\appresourceEditor_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\ddf_appresourceEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\CMakeFiles\2a19a0ffa161ceebc86fd946e6835ac3\qt6appresourceeditor_metatypes.json.gen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\CMakeFiles\c3e86aecfcc3a2d517f19b091be58751\appresourceeditor_qmltyperegistrations.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\CMakeFiles\699594b5100bcf1375bc0b7d6862487c\qrc_qmake_resourceEditor.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\CMakeFiles\446374361df6f7dc120953c3514905b4\appresourceEditor_main_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\CMakeFiles\446374361df6f7dc120953c3514905b4\appresourceEditor_libriry_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\CMakeFiles\446374361df6f7dc120953c3514905b4\appresourceEditor_tools_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\CMakeFiles\446374361df6f7dc120953c3514905b4\appresourceEditor_searchLine_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\CMakeFiles\446374361df6f7dc120953c3514905b4\appresourceEditor_showArea_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\CMakeFiles\699594b5100bcf1375bc0b7d6862487c\qrc_appresourceEditor_raw_qml_0.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\CMakeFiles\699594b5100bcf1375bc0b7d6862487c\qrc_viewer.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\meta_types\qt6appresourceeditor_metatypes.json.gen" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\main.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\libriry.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\tools.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\searchLine.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\showArea.qml" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6core_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6qml_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6network_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6quick_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6gui_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6qmlmodels_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6opengl_metatypes.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1D97D700-C21A-3156-B237-C51B6EDF8C3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6BA70014-07E1-3C12-84A6-632A6490A9E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{669CE7BF-54FF-3A59-8073-CEAD17600396}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

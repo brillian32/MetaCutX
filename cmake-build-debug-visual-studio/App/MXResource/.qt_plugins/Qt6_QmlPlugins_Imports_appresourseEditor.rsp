@@ -1,0 +1,15 @@
+-rootPath
+E:/GithubProject/MetaCutX/App/MXResource
+-cmake-output
+-output-file
+E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXResource/.qt_plugins/Qt6_QmlPlugins_Imports_appresourseEditor.cmake
+-importPath
+E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXResource/resourseEditor
+-importPath
+E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXResource
+-importPath
+D:/Qt6/6.4.3/msvc2019_64/./qml
+-qrcFiles
+E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXResource/.rcc/qmake_resourseEditor.qrc
+E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXResource/.rcc/appresourseEditor_raw_qml_0.qrc
+E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXResource/.rcc/viewer.qrc

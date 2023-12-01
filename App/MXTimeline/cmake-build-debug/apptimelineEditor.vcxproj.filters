@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\apptimelineEditor_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXResource\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\apptimelineeditor_qmltyperegistrations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\.rcc\qrc_qmake_timelineEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\.rcc\qmlcache\apptimelineEditor_qmlcache_loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\.rcc\qmlcache\apptimelineEditor_main_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\.rcc\qmlcache\apptimelineEditor_TimeScale_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\.rcc\qmlcache\apptimelineEditor_TrackHead_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\.rcc\qmlcache\apptimelineEditor_Clip_qml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\.rcc\qrc_apptimelineEditor_raw_qml_0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\.rcc\qrc_viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\apptimelineEditor_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\apptimelineEditor_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\apptimelineEditor_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\ddf_apptimelineEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\a4313fd8105c9ec0a0ac73f47679d29b\qt6apptimelineeditor_metatypes.json.gen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\0ff278f4e01acfe1a68a683e2752b6ab\apptimelineeditor_qmltyperegistrations.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\8c0ad22faf891b128d4098b093d3a64e\qrc_qmake_timelineEditor.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\cd03bdedbb1d7f173f145e8f4a204f99\apptimelineEditor_main_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\cd03bdedbb1d7f173f145e8f4a204f99\apptimelineEditor_TimeScale_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\cd03bdedbb1d7f173f145e8f4a204f99\apptimelineEditor_TrackHead_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\cd03bdedbb1d7f173f145e8f4a204f99\apptimelineEditor_Clip_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\8c0ad22faf891b128d4098b093d3a64e\qrc_apptimelineEditor_raw_qml_0.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\CMakeFiles\8c0ad22faf891b128d4098b093d3a64e\qrc_viewer.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug\meta_types\qt6apptimelineeditor_metatypes.json.gen" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\main.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\TimeScale.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\TrackHead.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\Clip.qml" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6core_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6qml_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6network_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6quick_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6gui_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6qmlmodels_metatypes.json" />
+    <None Include="D:\Qt6\6.4.3\msvc2019_64\lib\metatypes\qt6opengl_metatypes.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F9EAE367-B9D0-3EEA-8A65-9EF1FDED51C1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A12B7B0B-6A48-3EE1-9037-FDD79D27494D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C7C9D915-8A17-3D55-AF09-151863F4AFD2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,79 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "appresourceEditor_tooling::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "appresourceEditor_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "appresourceEditor_qmlimportscan::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "appresourceEditor_autogen::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "appresourceEditor_autogen",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/appresourceEditor_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/appresourceEditor_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/appresourceEditor_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

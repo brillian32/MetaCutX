@@ -1,0 +1,6 @@
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -G "Visual Studio 17 2022" -DCMAKE_TOOLCHAIN_FILE=D:\vcpkg\scripts\buildsystems\vcpkg.cmake -DCMAKE_PREFIX_PATH=D:\Qt6\6.4.3\msvc2019_64 --profiling-format=google-trace --profiling-output=CMakeFiles\clion-event-trace.json -S E:\GithubProject\MetaCutX\App\MXResource -B E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-event-trace
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Configuring done (2.2s)
+-- Generating done (0.7s)
+-- Build files have been written to: E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-event-trace

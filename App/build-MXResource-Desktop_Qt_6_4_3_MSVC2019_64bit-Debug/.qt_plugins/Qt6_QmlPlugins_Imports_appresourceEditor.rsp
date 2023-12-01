@@ -1,0 +1,15 @@
+-rootPath
+E:/GithubProject/MetaCutX/App/MXResource
+-cmake-output
+-output-file
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appresourceEditor.cmake
+-importPath
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/resourceEditor
+-importPath
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug
+-importPath
+D:/Qt6/6.4.3/msvc2019_64/./qml
+-qrcFiles
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/.rcc/qmake_resourceEditor.qrc
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/.rcc/appresourceEditor_raw_qml_0.qrc
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/.rcc/viewer.qrc

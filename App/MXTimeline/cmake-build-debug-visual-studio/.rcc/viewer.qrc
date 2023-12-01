@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/img">
+    <file alias="./lockTrack.png">E:/GithubProject/MetaCutX/App/MXTimeline/./lockTrack.png</file>
+    <file alias="./unlockTrack.png">E:/GithubProject/MetaCutX/App/MXTimeline/./unlockTrack.png</file>
+    <file alias="./disableMask.png">E:/GithubProject/MetaCutX/App/MXTimeline/./disableMask.png</file>
+    <file alias="./addTrack.png">E:/GithubProject/MetaCutX/App/MXTimeline/./addTrack.png</file>
+  </qresource>
+</RCC>
+

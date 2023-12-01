@@ -1,0 +1,14 @@
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/appresourceEditor.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/appresourceEditor_qmltyperegistration.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/all_qmltyperegistrations.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/appresourceEditor_other_files.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/appresourceEditor_qmllint.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/appresourceEditor_qmllint_json.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/all_qmllint.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/all_qmllint_json.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/appresourceEditor_tooling.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/appresourceEditor_qmlimportscan.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/edit_cache.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/rebuild_cache.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/appresourceEditor_autogen_timestamp_deps.dir
+E:/GithubProject/MetaCutX/App/build-MXResource-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/CMakeFiles/appresourceEditor_autogen.dir

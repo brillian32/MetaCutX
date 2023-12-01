@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\App\MXResource\x64\Debug\appresourseEditor_qmlimportscan</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\App\MXResource\x64\Debug\appresourseEditor_tooling</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\App\MXResource\x64\Debug\appresourseEditor_autogen</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\App\MXResource\x64\Debug\appresourseEditor_automoc_json_extraction</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

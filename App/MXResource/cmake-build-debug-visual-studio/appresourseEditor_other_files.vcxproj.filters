@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResourse\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="E:\GithubProject\MetaCutX\App\MXResourse\Audio.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="E:\GithubProject\MetaCutX\App\MXResourse\Effects.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="E:\GithubProject\MetaCutX\App\MXResourse\Media.png">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\App\MXResourse\cmake-build-debug-visual-studio\resourseEditor\qmldir" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResourse\main.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{F4A4ECDA-13C7-34A3-AAB7-F0693A50075A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

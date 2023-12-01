@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\App\MXTimeline\x64\Debug\apptimelineEditor_qmlimportscan</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\App\MXTimeline\x64\Debug\apptimelineEditor_tooling</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\App\MXTimeline\x64\Debug\apptimelineEditor_autogen</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\App\MXTimeline\x64\Debug\apptimelineEditor_automoc_json_extraction</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio\App\MXTimeline\Debug\apptimelineEditor.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

@@ -1,0 +1,26 @@
+# CMake generation dependency list for this directory.
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-C.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-CXX.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-MSVC-C.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-MSVC.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake
+D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake
+D:/vcpkg/scripts/buildsystems/vcpkg.cmake
+E:/GithubProject/MetaCutX/CMakeLists.txt
+E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CMakeCCompiler.cmake
+E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake
+E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CMakeRCCompiler.cmake
+E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CMakeSystem.cmake

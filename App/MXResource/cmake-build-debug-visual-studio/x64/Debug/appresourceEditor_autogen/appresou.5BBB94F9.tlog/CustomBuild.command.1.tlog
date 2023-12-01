@@ -1,0 +1,34 @@
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\DB8A7B9DAC3D1722D958C6AF0F6F0807\APPRESOURCEEDITOR_QMLCACHE_LOADER.CPP.RULE
+setlocal
+call .qt\bin\qt_setup_tool_path.bat D:/Qt6/6.4.3/msvc2019_64/./bin/qmlcachegen.exe --resource-name qmlcache_appresourceEditor --resource E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/qmake_resourceEditor.qrc --resource E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/appresourceEditor_raw_qml_0.qrc --resource E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/viewer.qrc -o E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/qmlcache/appresourceEditor_qmlcache_loader.cpp @E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/.rcc/qmlcache/appresourceEditor_qml_loader_file_list.rsp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\F781360657F100F3C2D1871026869B85\APPRESOURCEEDITOR_AUTOGEN.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-visual-studio
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E cmake_autogen E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/CMakeFiles/appresourceEditor_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKELISTS.TXT
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -SE:/GithubProject/MetaCutX/App/MXResource -BE:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio --check-stamp-file E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug-visual-studio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

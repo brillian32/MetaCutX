@@ -1,0 +1,66 @@
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\01DF455745DC175F075C06732D6F9140\MAIN.QML.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXTimeline
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy E:/GithubProject/MetaCutX/App/MXTimeline/main.qml E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/timelineEditor/main.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\01DF455745DC175F075C06732D6F9140\TIMESCALE.QML.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXTimeline
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy E:/GithubProject/MetaCutX/App/MXTimeline/TimeScale.qml E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/timelineEditor/TimeScale.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\01DF455745DC175F075C06732D6F9140\TRACKHEAD.QML.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXTimeline
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy E:/GithubProject/MetaCutX/App/MXTimeline/TrackHead.qml E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/timelineEditor/TrackHead.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\01DF455745DC175F075C06732D6F9140\CLIP.QML.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXTimeline
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E copy E:/GithubProject/MetaCutX/App/MXTimeline/Clip.qml E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/timelineEditor/Clip.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXTIMELINE\CMAKELISTS.TXT
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -SE:/GithubProject/MetaCutX -BE:/GithubProject/MetaCutX/cmake-build-debug-visual-studio --check-stamp-file E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXTimeline/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

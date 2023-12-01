@@ -1,0 +1,660 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "resourceEditor",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-c7d278170196a317047f.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-6b00a3ce457be1923986.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-982ed3754b170a2a260e.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-2adb818fc6e84e710190.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-e12a7b3549f66cda7e34.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor-Debug-3a32107dcb39221d916e.json",
+					"name" : "appresourceEditor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_autogen-Debug-656dc4820552b67c302c.json",
+					"name" : "appresourceEditor_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_automoc_json_extraction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_automoc_json_extraction-Debug-86c8a2fed838468930fc.json",
+					"name" : "appresourceEditor_automoc_json_extraction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_other_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_other_files-Debug-fe9855b10166708e7b6f.json",
+					"name" : "appresourceEditor_other_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmlimportscan-Debug-96cf6daaf7a12197e407.json",
+					"name" : "appresourceEditor_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmllint-Debug-613479e078b90b5082ea.json",
+					"name" : "appresourceEditor_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmllint_json-Debug-86fdb330212db9b85823.json",
+					"name" : "appresourceEditor_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmltyperegistration-Debug-bd48b74df9885a0a46ce.json",
+					"name" : "appresourceEditor_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_tooling-Debug-46fb954d5d95d61be010.json",
+					"name" : "appresourceEditor_tooling",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "resourceEditor",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-c7d278170196a317047f.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-6b00a3ce457be1923986.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Release-982ed3754b170a2a260e.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Release-2adb818fc6e84e710190.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Release-e12a7b3549f66cda7e34.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor-Release-69a456303a9877c5c13e.json",
+					"name" : "appresourceEditor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_autogen-Release-656dc4820552b67c302c.json",
+					"name" : "appresourceEditor_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_automoc_json_extraction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_automoc_json_extraction-Release-86c8a2fed838468930fc.json",
+					"name" : "appresourceEditor_automoc_json_extraction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_other_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_other_files-Release-fe9855b10166708e7b6f.json",
+					"name" : "appresourceEditor_other_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmlimportscan-Release-96cf6daaf7a12197e407.json",
+					"name" : "appresourceEditor_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmllint-Release-613479e078b90b5082ea.json",
+					"name" : "appresourceEditor_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmllint_json-Release-86fdb330212db9b85823.json",
+					"name" : "appresourceEditor_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmltyperegistration-Release-bd48b74df9885a0a46ce.json",
+					"name" : "appresourceEditor_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_tooling-Release-46fb954d5d95d61be010.json",
+					"name" : "appresourceEditor_tooling",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "resourceEditor",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-c7d278170196a317047f.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-6b00a3ce457be1923986.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-MinSizeRel-982ed3754b170a2a260e.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-MinSizeRel-2adb818fc6e84e710190.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-MinSizeRel-e12a7b3549f66cda7e34.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor-MinSizeRel-0effc0fba7e73c8a5ea2.json",
+					"name" : "appresourceEditor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_autogen-MinSizeRel-656dc4820552b67c302c.json",
+					"name" : "appresourceEditor_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_automoc_json_extraction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_automoc_json_extraction-MinSizeRel-86c8a2fed838468930fc.json",
+					"name" : "appresourceEditor_automoc_json_extraction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_other_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_other_files-MinSizeRel-fe9855b10166708e7b6f.json",
+					"name" : "appresourceEditor_other_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmlimportscan-MinSizeRel-96cf6daaf7a12197e407.json",
+					"name" : "appresourceEditor_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmllint-MinSizeRel-613479e078b90b5082ea.json",
+					"name" : "appresourceEditor_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmllint_json-MinSizeRel-86fdb330212db9b85823.json",
+					"name" : "appresourceEditor_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmltyperegistration-MinSizeRel-bd48b74df9885a0a46ce.json",
+					"name" : "appresourceEditor_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_tooling-MinSizeRel-46fb954d5d95d61be010.json",
+					"name" : "appresourceEditor_tooling",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "resourceEditor",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-c7d278170196a317047f.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-6b00a3ce457be1923986.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-RelWithDebInfo-982ed3754b170a2a260e.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-RelWithDebInfo-2adb818fc6e84e710190.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-RelWithDebInfo-e12a7b3549f66cda7e34.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor-RelWithDebInfo-b0566795902793796769.json",
+					"name" : "appresourceEditor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_autogen-RelWithDebInfo-656dc4820552b67c302c.json",
+					"name" : "appresourceEditor_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_automoc_json_extraction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_automoc_json_extraction-RelWithDebInfo-86c8a2fed838468930fc.json",
+					"name" : "appresourceEditor_automoc_json_extraction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_other_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_other_files-RelWithDebInfo-fe9855b10166708e7b6f.json",
+					"name" : "appresourceEditor_other_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmlimportscan-RelWithDebInfo-96cf6daaf7a12197e407.json",
+					"name" : "appresourceEditor_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmllint-RelWithDebInfo-613479e078b90b5082ea.json",
+					"name" : "appresourceEditor_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmllint_json-RelWithDebInfo-86fdb330212db9b85823.json",
+					"name" : "appresourceEditor_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_qmltyperegistration-RelWithDebInfo-bd48b74df9885a0a46ce.json",
+					"name" : "appresourceEditor_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appresourceEditor_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appresourceEditor_tooling-RelWithDebInfo-46fb954d5d95d61be010.json",
+					"name" : "appresourceEditor_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug",
+		"source" : "E:/GithubProject/MetaCutX/App/MXResource"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

@@ -1,0 +1,14 @@
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/apptimelineEditor.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/apptimelineEditor_automoc_json_extraction.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/apptimelineEditor_qmltyperegistration.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/all_qmltyperegistrations.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/apptimelineEditor_other_files.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/apptimelineEditor_qmllint.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/apptimelineEditor_qmllint_json.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/all_qmllint.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/all_qmllint_json.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/apptimelineEditor_tooling.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/apptimelineEditor_qmlimportscan.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/apptimelineEditor_autogen.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/ALL_BUILD.dir
+E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/CMakeFiles/ZERO_CHECK.dir

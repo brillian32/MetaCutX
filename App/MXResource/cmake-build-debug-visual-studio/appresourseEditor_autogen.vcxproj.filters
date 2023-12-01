@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResourse\cmake-build-debug-visual-studio\CMakeFiles\a340ace6412fe453d95a9b638057d91a\appresourseEditor_qmlcache_loader.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResourse\cmake-build-debug-visual-studio\CMakeFiles\80f70a7f29fcc6accb283aa38769f344\appresourseEditor_autogen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResourse\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\App\MXResourse\cmake-build-debug-visual-studio\CMakeFiles\appresourseEditor_autogen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D7D01BAE-9502-3E42-993D-372D9814CD71}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

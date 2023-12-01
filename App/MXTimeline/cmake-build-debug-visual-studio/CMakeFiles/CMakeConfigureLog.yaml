@@ -1,0 +1,634 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.22621 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      适用于 .NET Framework MSBuild 版本 17.8.3+195e7f5a3
+      生成启动时间为 2023/11/22 15:14:14。
+      
+      节点 1 上的项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)。
+      PrepareForBuild:
+        正在创建目录“Debug\\”。
+        已启用结构化输出。编译器诊断的格式设置将反映错误层次结构。有关详细信息，请参阅 https://aka.ms/cpp/structured-output。
+        正在创建目录“Debug\\CompilerIdCXX.tlog\\”。
+      InitializeBuildStatus:
+        正在创建“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        正在对“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”执行 Touch 任务。
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "D:\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"D:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "D:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+        或批处理文件。
+        命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        正在删除文件“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”。
+        正在对“Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate”执行 Touch 任务。
+      已完成生成项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)的操作。
+      
+      已成功生成。
+          0 个警告
+          0 个错误
+      
+      已用时间 00:00:00.91
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-v38lbd"
+      binary: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-v38lbd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-v38lbd
+        
+        Run Build Command(s):D:/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_81ad0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.8.3+195e7f5a3
+        生成启动时间为 2023/11/22 15:14:16。
+        
+        节点 1 上的项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-v38lbd\\cmTC_81ad0.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_81ad0.dir\\Debug\\”。
+          已启用结构化输出。编译器诊断的格式设置将反映错误层次结构。有关详细信息，请参阅 https://aka.ms/cpp/structured-output。
+          正在创建目录“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-v38lbd\\Debug\\”。
+          正在创建目录“cmTC_81ad0.dir\\Debug\\cmTC_81ad0.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_81ad0.dir\\Debug\\cmTC_81ad0.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_81ad0.dir\\Debug\\cmTC_81ad0.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        ClCompile:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_81ad0.dir\\Debug\\\\" /Fd"cmTC_81ad0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33130 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_81ad0.dir\\Debug\\\\" /Fd"cmTC_81ad0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-v38lbd\\Debug\\cmTC_81ad0.exe" /INCREMENTAL /ILK:"cmTC_81ad0.dir\\Debug\\cmTC_81ad0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-v38lbd/Debug/cmTC_81ad0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-v38lbd/Debug/cmTC_81ad0.lib" /MACHINE:X64  /machine:x64 cmTC_81ad0.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_81ad0.vcxproj -> E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-v38lbd\\Debug\\cmTC_81ad0.exe
+        PostBuildEvent:
+          setlocal
+          C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-v38lbd/Debug/cmTC_81ad0.exe -installedDir D:/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+          if %errorlevel% neq 0 goto :cmEnd
+          :cmEnd
+          endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+          :cmErrorLevel
+          exit /b %1
+          :cmDone
+          if %errorlevel% neq 0 goto :VCEnd
+          :VCEnd
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_81ad0.dir\\Debug\\cmTC_81ad0.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_81ad0.dir\\Debug\\cmTC_81ad0.tlog\\cmTC_81ad0.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-v38lbd\\cmTC_81ad0.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.83
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:33 (find_dependency)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-jf255p"
+      binary: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-jf255p"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6;D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-jf255p
+        
+        Run Build Command(s):D:/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e0352.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.8.3+195e7f5a3
+        生成启动时间为 2023/11/22 15:14:17。
+        
+        节点 1 上的项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-jf255p\\cmTC_e0352.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_e0352.dir\\Debug\\”。
+          已启用结构化输出。编译器诊断的格式设置将反映错误层次结构。有关详细信息，请参阅 https://aka.ms/cpp/structured-output。
+          正在创建目录“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-jf255p\\Debug\\”。
+          正在创建目录“cmTC_e0352.dir\\Debug\\cmTC_e0352.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_e0352.dir\\Debug\\cmTC_e0352.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_e0352.dir\\Debug\\cmTC_e0352.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        ClCompile:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e0352.dir\\Debug\\\\" /Fd"cmTC_e0352.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-jf255p\\src.cxx"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33130 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e0352.dir\\Debug\\\\" /Fd"cmTC_e0352.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-jf255p\\src.cxx"
+          src.cxx
+        E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-jf255p\\src.cxx(1,10): error C1083: 无法打开包括文件: “pthread.h”: No such file or directory [E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-jf255p\\cmTC_e0352.vcxproj]
+        已完成生成项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-jf255p\\cmTC_e0352.vcxproj”(默认目标)的操作 - 失败。
+        
+        生成失败。
+        
+        “E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-jf255p\\cmTC_e0352.vcxproj”(默认目标) (1) ->
+        (ClCompile 目标) -> 
+          E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-jf255p\\src.cxx(1,10): error C1083: 无法打开包括文件: “pthread.h”: No such file or directory [E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-jf255p\\cmTC_e0352.vcxproj]
+        
+            0 个警告
+            1 个错误
+        
+        已用时间 00:00:00.34
+        
+      exitCode: 1
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.22621 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      适用于 .NET Framework MSBuild 版本 17.8.3+195e7f5a3
+      生成启动时间为 2023/11/22 15:14:18。
+      
+      节点 1 上的项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)。
+      PrepareForBuild:
+        正在创建目录“Debug\\”。
+        已启用结构化输出。编译器诊断的格式设置将反映错误层次结构。有关详细信息，请参阅 https://aka.ms/cpp/structured-output。
+        正在创建目录“Debug\\CompilerIdCXX.tlog\\”。
+      InitializeBuildStatus:
+        正在创建“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+        正在对“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”执行 Touch 任务。
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "D:\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /I"D:\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"D:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "D:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+        或批处理文件。
+        命令“pwsh.exe -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"”已退出，代码为 9009。
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "D:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.exe" "D:\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        正在删除文件“Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild”。
+        正在对“Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate”执行 Touch 任务。
+      已完成生成项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\3.26.4\\CompilerIdCXX\\CompilerIdCXX.vcxproj”(默认目标)的操作。
+      
+      已成功生成。
+          0 个警告
+          0 个错误
+      
+      已用时间 00:00:00.95
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/3.26.4/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-q6la62"
+      binary: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-q6la62"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-q6la62
+        
+        Run Build Command(s):D:/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f6a17.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.8.3+195e7f5a3
+        生成启动时间为 2023/11/22 15:14:19。
+        
+        节点 1 上的项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-q6la62\\cmTC_f6a17.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_f6a17.dir\\Debug\\”。
+          已启用结构化输出。编译器诊断的格式设置将反映错误层次结构。有关详细信息，请参阅 https://aka.ms/cpp/structured-output。
+          正在创建目录“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-q6la62\\Debug\\”。
+          正在创建目录“cmTC_f6a17.dir\\Debug\\cmTC_f6a17.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_f6a17.dir\\Debug\\cmTC_f6a17.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_f6a17.dir\\Debug\\cmTC_f6a17.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        ClCompile:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f6a17.dir\\Debug\\\\" /Fd"cmTC_f6a17.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33130 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f6a17.dir\\Debug\\\\" /Fd"cmTC_f6a17.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\CLion\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-q6la62\\Debug\\cmTC_f6a17.exe" /INCREMENTAL /ILK:"cmTC_f6a17.dir\\Debug\\cmTC_f6a17.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-q6la62/Debug/cmTC_f6a17.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-q6la62/Debug/cmTC_f6a17.lib" /MACHINE:X64  /machine:x64 cmTC_f6a17.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_f6a17.vcxproj -> E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-q6la62\\Debug\\cmTC_f6a17.exe
+        PostBuildEvent:
+          setlocal
+          C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-q6la62/Debug/cmTC_f6a17.exe -installedDir D:/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+          if %errorlevel% neq 0 goto :cmEnd
+          :cmEnd
+          endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+          :cmErrorLevel
+          exit /b %1
+          :cmDone
+          if %errorlevel% neq 0 goto :VCEnd
+          :VCEnd
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_f6a17.dir\\Debug\\cmTC_f6a17.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_f6a17.dir\\Debug\\cmTC_f6a17.tlog\\cmTC_f6a17.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-q6la62\\cmTC_f6a17.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.84
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:33 (find_dependency)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-6cidy3"
+      binary: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-6cidy3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6;D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-6cidy3
+        
+        Run Build Command(s):D:/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_11070.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.8.3+195e7f5a3
+        生成启动时间为 2023/11/22 15:14:20。
+        
+        节点 1 上的项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6cidy3\\cmTC_11070.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_11070.dir\\Debug\\”。
+          已启用结构化输出。编译器诊断的格式设置将反映错误层次结构。有关详细信息，请参阅 https://aka.ms/cpp/structured-output。
+          正在创建目录“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6cidy3\\Debug\\”。
+          正在创建目录“cmTC_11070.dir\\Debug\\cmTC_11070.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_11070.dir\\Debug\\cmTC_11070.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_11070.dir\\Debug\\cmTC_11070.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        ClCompile:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_11070.dir\\Debug\\\\" /Fd"cmTC_11070.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6cidy3\\src.cxx"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33130 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_11070.dir\\Debug\\\\" /Fd"cmTC_11070.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6cidy3\\src.cxx"
+          src.cxx
+        E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6cidy3\\src.cxx(1,10): error C1083: 无法打开包括文件: “pthread.h”: No such file or directory [E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6cidy3\\cmTC_11070.vcxproj]
+        已完成生成项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6cidy3\\cmTC_11070.vcxproj”(默认目标)的操作 - 失败。
+        
+        生成失败。
+        
+        “E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6cidy3\\cmTC_11070.vcxproj”(默认目标) (1) ->
+        (ClCompile 目标) -> 
+          E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6cidy3\\src.cxx(1,10): error C1083: 无法打开包括文件: “pthread.h”: No such file or directory [E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6cidy3\\cmTC_11070.vcxproj]
+        
+            0 个警告
+            1 个错误
+        
+        已用时间 00:00:00.34
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:33 (find_dependency)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-e9bcso"
+      binary: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-e9bcso"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6;D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-e9bcso
+        
+        Run Build Command(s):D:/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_539da.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.8.3+195e7f5a3
+        生成启动时间为 2023/11/22 15:14:21。
+        
+        节点 1 上的项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-e9bcso\\cmTC_539da.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_539da.dir\\Debug\\”。
+          已启用结构化输出。编译器诊断的格式设置将反映错误层次结构。有关详细信息，请参阅 https://aka.ms/cpp/structured-output。
+          正在创建目录“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-e9bcso\\Debug\\”。
+          正在创建目录“cmTC_539da.dir\\Debug\\cmTC_539da.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_539da.dir\\Debug\\cmTC_539da.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_539da.dir\\Debug\\cmTC_539da.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        ClCompile:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_539da.dir\\Debug\\\\" /Fd"cmTC_539da.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-e9bcso\\CheckFunctionExists.cxx"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33130 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_539da.dir\\Debug\\\\" /Fd"cmTC_539da.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-e9bcso\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-e9bcso\\Debug\\cmTC_539da.exe" /INCREMENTAL /ILK:"cmTC_539da.dir\\Debug\\cmTC_539da.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-e9bcso/Debug/cmTC_539da.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-e9bcso/Debug/cmTC_539da.lib" /MACHINE:X64  /machine:x64 cmTC_539da.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 无法打开文件“pthreads.lib” [E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-e9bcso\\cmTC_539da.vcxproj]
+        已完成生成项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-e9bcso\\cmTC_539da.vcxproj”(默认目标)的操作 - 失败。
+        
+        生成失败。
+        
+        “E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-e9bcso\\cmTC_539da.vcxproj”(默认目标) (1) ->
+        (Link 目标) -> 
+          LINK : fatal error LNK1104: 无法打开文件“pthreads.lib” [E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-e9bcso\\cmTC_539da.vcxproj]
+        
+            0 个警告
+            1 个错误
+        
+        已用时间 00:00:00.40
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:33 (find_dependency)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-6zp9hi"
+      binary: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-6zp9hi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6;D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-6zp9hi
+        
+        Run Build Command(s):D:/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_c52fb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.8.3+195e7f5a3
+        生成启动时间为 2023/11/22 15:14:21。
+        
+        节点 1 上的项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6zp9hi\\cmTC_c52fb.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_c52fb.dir\\Debug\\”。
+          已启用结构化输出。编译器诊断的格式设置将反映错误层次结构。有关详细信息，请参阅 https://aka.ms/cpp/structured-output。
+          正在创建目录“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6zp9hi\\Debug\\”。
+          正在创建目录“cmTC_c52fb.dir\\Debug\\cmTC_c52fb.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_c52fb.dir\\Debug\\cmTC_c52fb.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_c52fb.dir\\Debug\\cmTC_c52fb.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        ClCompile:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c52fb.dir\\Debug\\\\" /Fd"cmTC_c52fb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6zp9hi\\CheckFunctionExists.cxx"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33130 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c52fb.dir\\Debug\\\\" /Fd"cmTC_c52fb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6zp9hi\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6zp9hi\\Debug\\cmTC_c52fb.exe" /INCREMENTAL /ILK:"cmTC_c52fb.dir\\Debug\\cmTC_c52fb.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-6zp9hi/Debug/cmTC_c52fb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-6zp9hi/Debug/cmTC_c52fb.lib" /MACHINE:X64  /machine:x64 cmTC_c52fb.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 无法打开文件“pthread.lib” [E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6zp9hi\\cmTC_c52fb.vcxproj]
+        已完成生成项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6zp9hi\\cmTC_c52fb.vcxproj”(默认目标)的操作 - 失败。
+        
+        生成失败。
+        
+        “E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6zp9hi\\cmTC_c52fb.vcxproj”(默认目标) (1) ->
+        (Link 目标) -> 
+          LINK : fatal error LNK1104: 无法打开文件“pthread.lib” [E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-6zp9hi\\cmTC_c52fb.vcxproj]
+        
+            0 个警告
+            1 个错误
+        
+        已用时间 00:00:00.39
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/FindWrapAtomic.cmake:33 (check_cxx_source_compiles)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:33 (find_dependency)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:40 (include)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:108 (find_dependency)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake:39 (_qt_internal_find_qt_dependencies)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake:40 (include)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:157 (find_package)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7oz5yd"
+      binary: "E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7oz5yd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6;D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/Qt6/6.4.3/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7oz5yd
+        
+        Run Build Command(s):D:/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_90250.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n && 适用于 .NET Framework MSBuild 版本 17.8.3+195e7f5a3
+        生成启动时间为 2023/11/22 15:14:22。
+        
+        节点 1 上的项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7oz5yd\\cmTC_90250.vcxproj”(默认目标)。
+        PrepareForBuild:
+          正在创建目录“cmTC_90250.dir\\Debug\\”。
+          已启用结构化输出。编译器诊断的格式设置将反映错误层次结构。有关详细信息，请参阅 https://aka.ms/cpp/structured-output。
+          正在创建目录“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7oz5yd\\Debug\\”。
+          正在创建目录“cmTC_90250.dir\\Debug\\cmTC_90250.tlog\\”。
+        InitializeBuildStatus:
+          正在创建“cmTC_90250.dir\\Debug\\cmTC_90250.tlog\\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+          正在对“cmTC_90250.dir\\Debug\\cmTC_90250.tlog\\unsuccessfulbuild”执行 Touch 任务。
+        ClCompile:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_90250.dir\\Debug\\\\" /Fd"cmTC_90250.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7oz5yd\\src.cxx"
+          用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.38.33130 版
+          版权所有(C) Microsoft Corporation。保留所有权利。
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_90250.dir\\Debug\\\\" /Fd"cmTC_90250.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7oz5yd\\src.cxx"
+          src.cxx
+        Link:
+          D:\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7oz5yd\\Debug\\cmTC_90250.exe" /INCREMENTAL /ILK:"cmTC_90250.dir\\Debug\\cmTC_90250.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7oz5yd/Debug/cmTC_90250.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7oz5yd/Debug/cmTC_90250.lib" /MACHINE:X64  /machine:x64 cmTC_90250.dir\\Debug\\src.obj
+          cmTC_90250.vcxproj -> E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7oz5yd\\Debug\\cmTC_90250.exe
+        PostBuildEvent:
+          setlocal
+          C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/CMakeFiles/CMakeScratch/TryCompile-7oz5yd/Debug/cmTC_90250.exe -installedDir D:/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+          if %errorlevel% neq 0 goto :cmEnd
+          :cmEnd
+          endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+          :cmErrorLevel
+          exit /b %1
+          :cmDone
+          if %errorlevel% neq 0 goto :VCEnd
+          :VCEnd
+        FinalizeBuildStatus:
+          正在删除文件“cmTC_90250.dir\\Debug\\cmTC_90250.tlog\\unsuccessfulbuild”。
+          正在对“cmTC_90250.dir\\Debug\\cmTC_90250.tlog\\cmTC_90250.lastbuildstate”执行 Touch 任务。
+        已完成生成项目“E:\\GithubProject\\MetaCutX\\App\\MXTimeline\\cmake-build-debug-visual-studio\\CMakeFiles\\CMakeScratch\\TryCompile-7oz5yd\\cmTC_90250.vcxproj”(默认目标)的操作。
+        
+        已成功生成。
+            0 个警告
+            0 个错误
+        
+        已用时间 00:00:00.93
+        
+      exitCode: 0
+...

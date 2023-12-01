@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio-event-trace\CMakeFiles\5af0bbdd072a4271b77d4ccde6350aff\qt6appresourceeditor_metatypes.json.gen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio-event-trace\CMakeFiles\9794c15323ac1a3c307370c52e4d1665\appresourceeditor_qmltyperegistrations.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio-event-trace\CMakeFiles\2499a68373f9e10bf3f2ae4d902251f3\appresourceEditor_qmltyperegistration.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio-event-trace\App\MXResource\CMakeFiles\appresourceEditor_qmltyperegistration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3FF54D5C-6ECC-3D54-B17F-C7E2B9D4AFD6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

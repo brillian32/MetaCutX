@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/timelineEditor">
+    <file alias="qmldir">E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio-event-trace/timelineEditor/qmldir</file>
+  </qresource>
+</RCC>
+

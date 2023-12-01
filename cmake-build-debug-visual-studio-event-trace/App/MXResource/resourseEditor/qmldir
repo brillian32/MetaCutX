@@ -1,0 +1,4 @@
+module resourseEditor
+typeinfo appresourseEditor.qmltypes
+prefer :/resourseEditor/
+

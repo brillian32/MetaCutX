@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/resourseEditor">
+    <file alias="qmldir">E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio/App/MXResource/resourseEditor/qmldir</file>
+  </qresource>
+</RCC>
+

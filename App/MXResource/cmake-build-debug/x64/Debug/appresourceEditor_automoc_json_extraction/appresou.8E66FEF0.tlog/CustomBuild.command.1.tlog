@@ -1,0 +1,20 @@
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG\CMAKEFILES\77E1852BB7DE96B7BD2DD32D55ADEA2F\APPRESOURCEEDITOR_AUTOMOC_JSON_EXTRACTION.RULE
+setlocal
+D:\Qt6\6.4.3\msvc2019_64\.\bin\cmake_automoc_parser.exe --cmake-autogen-cache-file E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor_autogen.dir/ParseCache_Debug.txt --cmake-autogen-info-file E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor_autogen.dir/AutogenInfo.json --output-file-path E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/meta_types/appresourceEditor_json_file_list.txt --timestamp-file-path E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/meta_types/appresourceEditor_json_file_list.txt.timestamp --cmake-autogen-include-dir-path E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/appresourceEditor_autogen/include_Debug --cmake-multi-config
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKELISTS.TXT
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -SE:/GithubProject/MetaCutX/App/MXResource -BE:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug --check-stamp-file E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

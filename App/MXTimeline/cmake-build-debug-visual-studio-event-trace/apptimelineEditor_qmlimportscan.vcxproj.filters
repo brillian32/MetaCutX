@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug-visual-studio-event-trace\CMakeFiles\429c0c0e999fcd284873a8d16ea90e89\Qt6_QmlPlugins_Imports_apptimelineEditor.cmake.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug-visual-studio-event-trace\CMakeFiles\66802e5876321b95924ddfbc5bb6d212\apptimelineEditor_qmlimportscan.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\cmake-build-debug-visual-studio-event-trace\CMakeFiles\apptimelineEditor_qmlimportscan" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6FD6704C-51B4-3CB0-8F29-99756189A2BF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

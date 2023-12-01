@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXResource\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="E:\GithubProject\MetaCutX\App\MXResource\Audio.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="E:\GithubProject\MetaCutX\App\MXResource\Effects.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="E:\GithubProject\MetaCutX\App\MXResource\Media.png">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug-event-trace\resourceEditor\qmldir" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\main.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\libriry.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\tools.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\searchLine.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXResource\showArea.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{1245AB11-2401-3CBB-BCC9-7632735DBACF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\GithubProject\MetaCutX\App\MXTimeline\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="E:\GithubProject\MetaCutX\App\MXTimeline\lockTrack.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="E:\GithubProject\MetaCutX\App\MXTimeline\unlockTrack.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="E:\GithubProject\MetaCutX\App\MXTimeline\disableMask.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="E:\GithubProject\MetaCutX\App\MXTimeline\addTrack.png">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio-event-trace\App\MXTimeline\timelineEditor\qmldir" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\main.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\TimeScale.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\TrackHead.qml" />
+    <None Include="E:\GithubProject\MetaCutX\App\MXTimeline\Clip.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{B6A5B89E-6FBC-3F66-B5A0-F5D1C2D17FF7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

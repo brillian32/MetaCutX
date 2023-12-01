@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+D:/vcpkg/installed/x64-windows/share/doctest/doctestConfig.cmake
+D:/vcpkg/installed/x64-windows/share/doctest/doctestConfigVersion.cmake
+D:/vcpkg/installed/x64-windows/share/doctest/doctestTargets.cmake
+E:/GithubProject/MetaCutX/Core/MXRender/test/CMakeLists.txt

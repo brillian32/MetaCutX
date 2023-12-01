@@ -1,0 +1,10 @@
+^E:\GITHUBPROJECT\METACUTX\APP\MXTIMELINE\CMAKE-BUILD-DEBUG-VISUAL-STUDIO\CMAKEFILES\8B3510B988F8014E130FD5E4687FFEAE\GENERATE.STAMP.RULE
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -SE:/GithubProject/MetaCutX/App/MXTimeline -BE:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/GithubProject/MetaCutX/App/MXTimeline/cmake-build-debug-visual-studio/timelineEditor.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

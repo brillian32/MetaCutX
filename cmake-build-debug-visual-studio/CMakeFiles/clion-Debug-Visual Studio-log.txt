@@ -1,0 +1,19 @@
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -G "Visual Studio 17 2022" -DCMAKE_TOOLCHAIN_FILE=D:\vcpkg\scripts\buildsystems\vcpkg.cmake -DCMAKE_PREFIX_PATH=D:\Qt6\6.4.3\msvc2019_64 -S E:\GithubProject\MetaCutX -B E:\GithubProject\MetaCutX\cmake-build-debug-visual-studio
+------MXRender------
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- MXRenderTest
+------MXUtility------
+-- info:E:/GithubProject/MetaCutX/Core/MXUtility/include
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Configuring done (3.0s)
+-- Generating done (0.5s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_TOOLCHAIN_FILE
+
+
+-- Build files have been written to: E:/GithubProject/MetaCutX/cmake-build-debug-visual-studio

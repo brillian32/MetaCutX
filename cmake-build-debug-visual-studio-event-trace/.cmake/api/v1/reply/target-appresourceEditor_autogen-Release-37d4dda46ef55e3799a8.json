@@ -1,0 +1,79 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"App/MXResource/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "appresourceEditor_tooling::@ef6d8bfc6bce41258e86"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "appresourceEditor_qmlimportscan::@ef6d8bfc6bce41258e86"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "appresourceEditor_autogen::@ef6d8bfc6bce41258e86",
+	"isGeneratorProvided" : true,
+	"name" : "appresourceEditor_autogen",
+	"paths" : 
+	{
+		"build" : "App/MXResource",
+		"source" : "App/MXResource"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio-event-trace/App/MXResource/CMakeFiles/appresourceEditor_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio-event-trace/CMakeFiles/2499a68373f9e10bf3f2ae4d902251f3/appresourceEditor_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug-visual-studio-event-trace/CMakeFiles/a54c3aa02f45f5634ee549833ab2b591/appresourceEditor_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

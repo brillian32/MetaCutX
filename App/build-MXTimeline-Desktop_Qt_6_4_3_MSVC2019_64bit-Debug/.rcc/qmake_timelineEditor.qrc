@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/timelineEditor">
+    <file alias="qmldir">E:/GithubProject/MetaCutX/App/build-MXTimeline-Desktop_Qt_6_4_3_MSVC2019_64bit-Debug/timelineEditor/qmldir</file>
+  </qresource>
+</RCC>
+

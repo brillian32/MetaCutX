@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\x64\Debug\appresourceEditor_qmlimportscan</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\x64\Debug\appresourceEditor_tooling</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\x64\Debug\appresourceEditor_autogen</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\x64\Debug\appresourceEditor_automoc_json_extraction</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug\Debug\appresourceEditor.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

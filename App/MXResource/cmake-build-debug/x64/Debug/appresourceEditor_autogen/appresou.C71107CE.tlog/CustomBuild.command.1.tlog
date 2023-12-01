@@ -1,0 +1,34 @@
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG\CMAKEFILES\446374361DF6F7DC120953C3514905B4\APPRESOURCEEDITOR_QMLCACHE_LOADER.CPP.RULE
+setlocal
+call .qt\bin\qt_setup_tool_path.bat D:/Qt6/6.4.3/msvc2019_64/./bin/qmlcachegen.exe --resource-name qmlcache_appresourceEditor --resource E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/.rcc/qmake_resourceEditor.qrc --resource E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/.rcc/appresourceEditor_raw_qml_0.qrc --resource E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/.rcc/viewer.qrc -o E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/.rcc/qmlcache/appresourceEditor_qmlcache_loader.cpp @E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/.rcc/qmlcache/appresourceEditor_qml_loader_file_list.rsp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKE-BUILD-DEBUG\CMAKEFILES\77E1852BB7DE96B7BD2DD32D55ADEA2F\APPRESOURCEEDITOR_AUTOGEN.RULE
+setlocal
+cd E:\GithubProject\MetaCutX\App\MXResource\cmake-build-debug
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -E cmake_autogen E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/appresourceEditor_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^E:\GITHUBPROJECT\METACUTX\APP\MXRESOURCE\CMAKELISTS.TXT
+setlocal
+D:\CLion\bin\cmake\win\x64\bin\cmake.exe -SE:/GithubProject/MetaCutX/App/MXResource -BE:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug --check-stamp-file E:/GithubProject/MetaCutX/App/MXResource/cmake-build-debug/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

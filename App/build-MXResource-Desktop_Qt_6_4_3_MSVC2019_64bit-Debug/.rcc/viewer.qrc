@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/img">
+    <file alias="./Audio.png">E:/GithubProject/MetaCutX/App/MXResource/./Audio.png</file>
+    <file alias="./Effects.png">E:/GithubProject/MetaCutX/App/MXResource/./Effects.png</file>
+    <file alias="./Media.png">E:/GithubProject/MetaCutX/App/MXResource/./Media.png</file>
+  </qresource>
+</RCC>
+
