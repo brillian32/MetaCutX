@@ -71,6 +71,7 @@ bool PlayController::isPlaying()
 }
 void PlayController::pause()
 {
+	m_curFrame = m_decoder->getCurDecodeFrame();
 	m_decoder->pauseDecoding();
 	INFO("pause");
 }

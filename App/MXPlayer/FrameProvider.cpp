@@ -107,6 +107,7 @@ void FrameProvider::deliverFrame(cv::Mat mat) {
 	if (m_videoSink.isNull())
 		return;
 //	LOG_RUN_TIME("deliverFrame");
+	INFO("deliverFrame");
 	auto frame2 = matToVideoFrame(mat);
 	m_videoSink->setVideoFrame(frame2);
 }

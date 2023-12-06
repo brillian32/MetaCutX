@@ -94,6 +94,7 @@ void DecodeVideo::setDecodeBegin(int64 beginFrame)
 	AVRational frame_rate = m_formatContext->streams[m_videoStreamIndex]->r_frame_rate;
 
 	m_beginFrame = beginFrame;
+	m_currentDecodeFrame = beginFrame;
 
 	int64 targetTime = (double)beginFrame/(double)av_q2d(frame_rate)/(double)av_q2d(time_base);
 	m_beginTimeStamp = targetTime;
@@ -130,6 +131,7 @@ void DecodeVideo::decodeVideo(std::function<void(cv::Mat&)>  getMat)
 				}
 				cv::Mat cvFrame = AVFrame2CvMat(frame);
 				// 显示帧
+				m_currentDecodeFrame++;
 				DisplayFrame(cvFrame);
 				getMat(cvFrame);
 			}
@@ -365,5 +367,9 @@ int64_t DecodeVideo::getFrameCount()
 	DEBUG("avg_frame_rate:{:.9}", av_q2d(m_formatContext->streams[m_videoStreamIndex]->avg_frame_rate));
 	DEBUG("r_frame_rate:{:.9}", av_q2d(m_formatContext->streams[m_videoStreamIndex]->r_frame_rate));
 	return cntFrames;
+}
+int64 DecodeVideo::getCurDecodeFrame()
+{
+	return m_currentDecodeFrame;
 }
 

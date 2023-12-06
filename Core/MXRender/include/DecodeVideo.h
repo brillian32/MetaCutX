@@ -43,6 +43,7 @@ public:
 	cv::Mat getFrameMatAtTime(int64_t timeStamp);
 	double getDuration();
 	int64_t getFrameCount();
+	int64 getCurDecodeFrame();
 
 private:
 	void init();
@@ -53,6 +54,7 @@ private:
 	int m_videoStreamIndex = -1;
 
 	int64 m_beginFrame = 0;
+	int64 m_currentDecodeFrame = 0;
 	int64 m_beginTimeStamp = 0;
 
 	bool m_isDecoding = false;
