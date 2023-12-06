@@ -32,6 +32,8 @@ qt_add_resources(appPlayer "viewer"
         ${viewer_resource_files}
         )
 
+
+#设置属性
 set_target_properties(appPlayer PROPERTIES
         MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
         MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}

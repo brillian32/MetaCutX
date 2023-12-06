@@ -35,16 +35,23 @@ Rectangle {
             ToolButton {
                 icon.source: "qrc:/img/play.png"
                 onClicked: {
-                    playController.play();
-                    console.log("play");
+                    if (playController.isPlaying()) {
+                        icon.source = "qrc:/img/play.png"
+                        playController.pause();
+                    }
+                    else{
+                        playController.play();
+                        icon.source = "qrc:/img/pause.png"
+                        console.log("play");
+                    }
                 }
             }
-            ToolButton {
-                icon.source: "qrc:/img/pause.png"
-                onClicked: {
-                    console.log("pause");
-                }
-            }
+        //     ToolButton {
+        //         icon.source: "qrc:/img/pause.png"
+        //         onClicked: {
+        //             console.log("pause");
+        //         }
+        //     }
         }
     }
 }

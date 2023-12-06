@@ -8,6 +8,8 @@
 #include "DecodeVideo.h"
 #include "PlayController.h"
 #include <opencv2/opencv.hpp>
+#include <QApplication>
+#include <QStandardPaths>
 
 #if WIN32
 #define VIDEO_FILE_PATH "C:\\Users\\17305\\Documents\\Wondershare\\Wondershare Filmora\\Output\\我的影片.mp4"
@@ -18,8 +20,8 @@
 int main(int argc, char *argv[])
 {
 	QGuiApplication app(argc, argv);
-
-	initSpdLog("player.txt");
+	QString appDataPath = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+	initSpdLog(appDataPath.toStdString()+"/player.txt");
 	QQmlApplicationEngine engine;
 	const QUrl url(u"qrc:/Player/main.qml"_qs);
 	QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,

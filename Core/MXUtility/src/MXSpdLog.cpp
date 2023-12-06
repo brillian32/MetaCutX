@@ -54,7 +54,7 @@ void initSpdLog(std::string log_path)
 	//[%#] 行号
 	//[%!] 函数
 	//[%v] 实际文本
-	log->set_pattern("[%Y-%m-%d %H:%M:%S.%e] %^[%l]%$ [%t] [%s:%!] [%#] %v");
+	log->set_pattern("[%Y-%m-%d %H:%M:%S.%e] %^[%l]%$ [%t] [%s:%#](%!) %v");
 	//设置当出发 err 或更严重的错误时立刻刷新日志到  disk
 	log->flush_on(spdlog::level::err);
 	//3秒刷新一次队列

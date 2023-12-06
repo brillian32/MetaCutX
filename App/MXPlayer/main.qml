@@ -28,6 +28,12 @@ Window {
         anchors.left: parent.left
         anchors.leftMargin: 10
         width: parent.width - 20
+        Component.onCompleted: {
+            slider.value = 0;
+            slider.from = 0;
+            slider.to = playController.getFrameCount();
+            console.log("slider.to = " + slider.to);
+        }
     }
     PlayerToolBox {
         anchors.top: slider.bottom

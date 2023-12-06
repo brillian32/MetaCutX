@@ -32,6 +32,8 @@ public:
 	~DecodeVideo();
 
 
+	bool isDecoding();
+	void pauseDecoding();
 	void setDecodeBegin(int64 beginFrame);
 	cv::Mat getDecodeBegin(std::function<void(cv::Mat&)>  getMat);
 	void decodeVideo(std::function<void(cv::Mat&)>  getMat);
@@ -40,6 +42,7 @@ public:
 	cv::Mat getFrameMat2(double percent);
 	cv::Mat getFrameMatAtTime(int64_t timeStamp);
 	double getDuration();
+	int64_t getFrameCount();
 
 private:
 	void init();
@@ -52,9 +55,14 @@ private:
 	int64 m_beginFrame = 0;
 	int64 m_beginTimeStamp = 0;
 
+	bool m_isDecoding = false;
+	bool m_isPausedDecoding = false;
+
 	AVFormatContext* m_formatContext = nullptr;
 	AVCodecContext* m_codecContext = nullptr;
 	AVCodecParameters* m_codecParameters = nullptr;
+
+	std::mutex m_mutex;
 };
 
 

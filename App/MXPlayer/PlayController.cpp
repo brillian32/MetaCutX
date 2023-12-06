@@ -63,3 +63,19 @@ void PlayController::setCurrentFrame(int64 curFrame)
 								});
 
 }
+bool PlayController::isPlaying()
+{
+	auto isDecoding = m_decoder->isDecoding();
+	INFO( "isPlaying:{}", isDecoding);
+	return isDecoding;
+}
+void PlayController::pause()
+{
+	m_decoder->pauseDecoding();
+	INFO("pause");
+}
+
+int64 PlayController::getFrameCount()
+{
+	return m_decoder->getFrameCount();
+}

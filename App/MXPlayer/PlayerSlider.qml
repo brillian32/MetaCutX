@@ -39,7 +39,8 @@ Slider {
         }
 
         onValueChanged: {
-            console.log("value:",value)
+            console.log("value:",value,parseInt(value))
+            playController.setCurrentFrame(parseInt(value))
         }
 
 }

@@ -106,6 +106,10 @@ void DecodeVideo::setDecodeBegin(int64 beginFrame)
 
 void DecodeVideo::decodeVideo(std::function<void(cv::Mat&)>  getMat)
 {
+	m_isPausedDecoding = false;
+	m_mutex.lock();
+	m_isDecoding = true;
+	m_mutex.unlock();
 	AVPacket* packet = av_packet_alloc();
 	AVFrame* frame = av_frame_alloc();
 
@@ -117,6 +121,13 @@ void DecodeVideo::decodeVideo(std::function<void(cv::Mat&)>  getMat)
 			while (avcodec_receive_frame(m_codecContext, frame) == 0) {
 				// 将AVFrame转换为OpenCV的Mat
 //				 ConvertAVFrameToMat(frame);
+				if(m_isPausedDecoding)
+				{
+					m_mutex.lock();
+					m_isDecoding = false;
+					m_mutex.unlock();
+					return;
+				}
 				cv::Mat cvFrame = AVFrame2CvMat(frame);
 				// 显示帧
 				DisplayFrame(cvFrame);
@@ -128,6 +139,9 @@ void DecodeVideo::decodeVideo(std::function<void(cv::Mat&)>  getMat)
 
 	av_frame_free(&frame);
 	av_packet_free(&packet);
+	m_mutex.lock();
+	m_isDecoding = false;
+	m_mutex.unlock();
 }
 
 void DecodeVideo::setOutputFilePath(std::string path)
@@ -329,5 +343,27 @@ cv::Mat DecodeVideo::getDecodeBegin(std::function<void(cv::Mat&)>  getMat)
 	av_frame_free(&frame);
 	av_packet_free(&packet);
 //	return {};
+}
+
+bool DecodeVideo::isDecoding()
+{
+	std::unique_lock<std::mutex> lock(m_mutex);
+	return m_isDecoding;
+}
+
+void DecodeVideo::pauseDecoding()
+{
+	m_isPausedDecoding = true;
+}
+
+int64_t DecodeVideo::getFrameCount()
+{
+	auto cntFrames =m_formatContext->streams[m_videoStreamIndex]->nb_frames;
+	DEBUG("cntFrames:{}", cntFrames);
+	DEBUG("duration:{}", m_formatContext->streams[m_videoStreamIndex]->duration);
+	DEBUG("time_base:{:.9}", av_q2d(m_formatContext->streams[m_videoStreamIndex]->time_base));
+	DEBUG("avg_frame_rate:{:.9}", av_q2d(m_formatContext->streams[m_videoStreamIndex]->avg_frame_rate));
+	DEBUG("r_frame_rate:{:.9}", av_q2d(m_formatContext->streams[m_videoStreamIndex]->r_frame_rate));
+	return cntFrames;
 }
 

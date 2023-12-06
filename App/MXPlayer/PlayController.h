@@ -24,8 +24,11 @@ signals:
 public slots:
 	void setCurrentFrame(int64 curFrame);
 	void play();
+	void pause();
+	bool isPlaying();
 	void nextFrame();
 	void preFrame();
+	int64 getFrameCount();
 
 private:
 	DecodeVideo *m_decoder;
