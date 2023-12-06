@@ -27,7 +27,7 @@ target_compile_definitions(
         ${PROJECT_NAME} PRIVATE
         EXPORT_DLL
 )
-target_compile_options(${PROJECT_NAME} PRIVATE
-        $<$<CXX_COMPILER_ID:MSVC>:/source-charset:utf-8>
-        $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-finput-charset=UTF-8>
-        )
+#target_compile_options(${PROJECT_NAME} PRIVATE
+#        $<$<CXX_COMPILER_ID:MSVC>:/source-charset:utf-8>
+#        $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-finput-charset=UTF-8>
+#        )
