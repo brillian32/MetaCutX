@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 {
 	QGuiApplication app(argc, argv);
 
-	initSpdLog("player");
+	initSpdLog("player.txt");
 	QQmlApplicationEngine engine;
 	const QUrl url(u"qrc:/Player/main.qml"_qs);
 	QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,

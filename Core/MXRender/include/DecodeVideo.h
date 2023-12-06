@@ -49,6 +49,9 @@ private:
 	std::string m_outputFilePath;
 	int m_videoStreamIndex = -1;
 
+	int64 m_beginFrame = 0;
+	int64 m_beginTimeStamp = 0;
+
 	AVFormatContext* m_formatContext = nullptr;
 	AVCodecContext* m_codecContext = nullptr;
 	AVCodecParameters* m_codecParameters = nullptr;

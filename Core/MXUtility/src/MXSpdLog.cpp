@@ -10,7 +10,7 @@ void initSpdLog(std::string log_path)
 	spdlog::init_thread_pool(8192, 1);
 	//标准控制台输出
 	auto stdout_sink = std::make_shared<spdlog::sinks::stdout_color_sink_mt >();
-	stdout_sink->set_level(spdlog::level::debug);
+	stdout_sink->set_level(spdlog::level::trace);
 	//日志文件输出，0点0分创建新日志
 	auto file_sink = std::make_shared<spdlog::sinks::daily_file_sink_mt>(log_path, 0, 0);
 	file_sink->set_level(spdlog::level::info);
@@ -38,7 +38,7 @@ void initSpdLog(std::string log_path)
 																			   //std::cout << to_string_view(msg.level).data() << " " << str << std::endl << std::endl << std::flush;
 
 																		   });
-	callback_sink->set_level(spdlog::level::info);
+	callback_sink->set_level(spdlog::level::trace);
 
 	std::vector<spdlog::sink_ptr> sinks{ stdout_sink, file_sink,callback_sink };
 	auto log = std::make_shared<spdlog::async_logger>("logger", sinks.begin(), sinks.end(), spdlog::thread_pool(), spdlog::async_overflow_policy::block);
@@ -54,7 +54,7 @@ void initSpdLog(std::string log_path)
 	//[%#] 行号
 	//[%!] 函数
 	//[%v] 实际文本
-	log->set_pattern("[%Y-%m-%d %H:%M:%S.%e] %^[%l]%$ [%t] [%s:%!:%#] %v");
+	log->set_pattern("[%Y-%m-%d %H:%M:%S.%e] %^[%l]%$ [%t] [%s:%!] [%#] %v");
 	//设置当出发 err 或更严重的错误时立刻刷新日志到  disk
 	log->flush_on(spdlog::level::err);
 	//3秒刷新一次队列

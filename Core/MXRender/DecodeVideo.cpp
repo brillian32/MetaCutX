@@ -20,6 +20,7 @@ extern "C" {
 }
 #include "MXSpdLog.h"
 
+
 // 创建Mat对象，并分配数据和行指针
 void ConvertAVFrameToMat(AVFrame* frame)
 {
@@ -92,7 +93,11 @@ void DecodeVideo::setDecodeBegin(int64 beginFrame)
 	AVRational time_base = m_formatContext->streams[m_videoStreamIndex]->time_base;
 	AVRational frame_rate = m_formatContext->streams[m_videoStreamIndex]->r_frame_rate;
 
+	m_beginFrame = beginFrame;
+
 	int64 targetTime = (double)beginFrame/(double)av_q2d(frame_rate)/(double)av_q2d(time_base);
+	m_beginTimeStamp = targetTime;
+	INFO("seek frame to targetTime {}", targetTime);
 	auto ret = av_seek_frame(m_formatContext, m_videoStreamIndex, targetTime,  AVSEEK_FLAG_BACKWARD);
 	if (ret < 0) {
 		ERROR("seek frame error");
@@ -295,7 +300,6 @@ cv::Mat DecodeVideo::getDecodeBegin(std::function<void(cv::Mat&)>  getMat)
 {
 	AVPacket* packet = av_packet_alloc();
 	AVFrame* frame = av_frame_alloc();
-	int cnt = 0;
 	// 读取帧数据
 	while (av_read_frame(m_formatContext, packet) >= 0) {
 		if (packet->stream_index == m_videoStreamIndex) {
@@ -307,13 +311,15 @@ cv::Mat DecodeVideo::getDecodeBegin(std::function<void(cv::Mat&)>  getMat)
 				cv::Mat cvFrame = AVFrame2CvMat(frame);
 				// 显示帧
 				DisplayFrame(cvFrame);
-
-
-				getMat(cvFrame);
-				cnt++;
-				if (cnt > 300) {
+				if (frame->pkt_dts >= m_beginTimeStamp) {
+					DEBUG("pts:{}", frame->pts);
+					DEBUG("pkt_dts:{}", frame->pkt_dts);
+					DEBUG("time_base:{:.9}", av_q2d(frame->time_base));
+					DEBUG("is keyFrame:{}", frame->key_frame==1);
+					DEBUG("Frame type:{}",(int)frame->pict_type);
 					av_frame_free(&frame);
 					av_packet_free(&packet);
+					getMat(cvFrame);
 					return cvFrame;
 				}
 			}

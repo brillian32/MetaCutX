@@ -6,6 +6,7 @@
 #ifndef MYSPDLOG_H
 #define MYSPDLOG_H
 
+#define SPDLOG_ACTIVE_LEVEL SPDLOG_LEVEL_TRACE
 #include "spdlog/spdlog.h"
 #include "spdlog/async.h"
 #include "spdlog/sinks/daily_file_sink.h"
@@ -56,5 +57,6 @@ private:
 
 
 #define LOG_RUN_TIME(name) LogRunTime log_run_time(name)
+
 
 #endif //MYSPDLOG_H

@@ -45,6 +45,10 @@ void PlayController::nextFrame()
 }
 void PlayController::preFrame()
 {
+	if (m_curFrame <= 0)
+	{
+		return;
+	}
 	m_curFrame--;
 	setCurrentFrame(m_curFrame);
 }
@@ -53,13 +57,9 @@ void PlayController::setCurrentFrame(int64 curFrame)
 	INFO("setCurrentFrame:{}", curFrame);
 	m_curFrame = curFrame;
 	m_decoder->setDecodeBegin(curFrame);
-	QtConcurrent::run([this]()
-	{
-
-	  m_decoder->getDecodeBegin([this](cv::Mat &mat)
+	m_decoder->getDecodeBegin([this](cv::Mat &mat)
 								{
 									emit sigFrameReady(mat);
 								});
-	});
 
 }
