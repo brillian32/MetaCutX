@@ -27,24 +27,28 @@ PlayController::~PlayController()
 }
 void PlayController::play()
 {
-	QtConcurrent::run([this](){
-		m_decoder->decodeVideo([this](cv::Mat& mat){
-			emit sigFrameReady(mat);
+	QtConcurrent::run([this]() {
+		m_decoder->decodeVideo([this](cv::Mat& mat, int64& curFrame) {
+			emit sigFrameReady(mat, curFrame);
+			m_curFrame = curFrame;
 		});
+		INFO("play end");
 	});
 }
 
-void PlayController::setVideoDecoder(DecodeVideo *decoder)
+void PlayController::setVideoDecoder(DecodeVideo* decoder)
 {
 	m_decoder = decoder;
 }
 void PlayController::nextFrame()
 {
+	pause();
 	m_curFrame++;
 	setCurrentFrame(m_curFrame);
 }
 void PlayController::preFrame()
 {
+	pause();
 	if (m_curFrame <= 0)
 	{
 		return;
@@ -54,14 +58,11 @@ void PlayController::preFrame()
 }
 void PlayController::setCurrentFrame(int64 curFrame)
 {
+//	QThread::msleep(1300);
 	INFO("setCurrentFrame:{}", curFrame);
 	m_curFrame = curFrame;
 	m_decoder->setDecodeBegin(curFrame);
-	m_decoder->getDecodeBegin([this](cv::Mat &mat)
-								{
-									emit sigFrameReady(mat);
-								});
-
+	m_decoder->getDecodeBegin([this](cv::Mat& mat, int64& curFrame) { emit sigFrameReady(mat, curFrame); });
 }
 bool PlayController::isPlaying()
 {
@@ -71,8 +72,9 @@ bool PlayController::isPlaying()
 }
 void PlayController::pause()
 {
-	m_curFrame = m_decoder->getCurDecodeFrame();
 	m_decoder->pauseDecoding();
+//	QThread::msleep(100);
+	m_curFrame = m_decoder->getCurDecodeFrame();
 	INFO("pause");
 }
 

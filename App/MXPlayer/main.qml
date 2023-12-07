@@ -21,6 +21,17 @@ Window {
         frameProvider.videoSink = videoContainer.videoSink;
     }
 
+    Connections {
+        target: frameProvider
+
+        onFrameChanged: (value) =>{
+            console.log("onFrameChanged.", value);
+            slider.blockSig = true;
+            slider.value = value;
+            slider.blockSig = false;
+        }
+    }
+
     PlayerSlider {
         id: slider
         anchors.bottom: parent.bottom
@@ -28,6 +39,7 @@ Window {
         anchors.left: parent.left
         anchors.leftMargin: 10
         width: parent.width - 20
+
         Component.onCompleted: {
             slider.value = 0;
             slider.from = 0;
@@ -35,13 +47,14 @@ Window {
             console.log("slider.to = " + slider.to);
         }
     }
+
     PlayerToolBox {
-        anchors.top: slider.bottom
         anchors.bottomMargin: 6
-        anchors.right: parent.right
-        anchors.rightMargin: 10
         anchors.left: parent.left
         anchors.leftMargin: 10
+        anchors.right: parent.right
+        anchors.rightMargin: 10
+        anchors.top: slider.bottom
         height: 30
     }
     VideoOutput {

@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 
 Slider {
+        property bool blockSig: false
         width: parent.width
         height: 20
         id: control
@@ -39,6 +40,9 @@ Slider {
         }
 
         onValueChanged: {
+            if (blockSig) {
+                return;
+            }
             console.log("value:",value,parseInt(value))
             playController.setCurrentFrame(parseInt(value))
         }

@@ -103,13 +103,14 @@ QImage MatToQImage(const cv::Mat& mat)
 	}
 }
 
-void FrameProvider::deliverFrame(cv::Mat mat) {
+void FrameProvider::deliverFrame(cv::Mat mat,int64 curFrameNum) {
 	if (m_videoSink.isNull())
 		return;
 //	LOG_RUN_TIME("deliverFrame");
-	INFO("deliverFrame");
+	INFO("deliverFrame {}",curFrameNum);
 	auto frame2 = matToVideoFrame(mat);
 	m_videoSink->setVideoFrame(frame2);
+	emit frameChanged(curFrameNum);
 }
 
 void FrameProvider::debug()

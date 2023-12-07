@@ -90,6 +90,7 @@ cv::Mat AVFrame2CvMat(AVFrame *frame) {
 
 void DecodeVideo::setDecodeBegin(int64 beginFrame)
 {
+	std::unique_lock lock(m_mutexDecode);
 	AVRational time_base = m_formatContext->streams[m_videoStreamIndex]->time_base;
 	AVRational frame_rate = m_formatContext->streams[m_videoStreamIndex]->r_frame_rate;
 
@@ -105,8 +106,9 @@ void DecodeVideo::setDecodeBegin(int64 beginFrame)
 	}
 }
 
-void DecodeVideo::decodeVideo(std::function<void(cv::Mat&)>  getMat)
+void DecodeVideo::decodeVideo(std::function<void(cv::Mat&,int64& curFrame)>  getMat)
 {
+	std::unique_lock lock(m_mutexDecode);
 	m_isPausedDecoding = false;
 	m_mutex.lock();
 	m_isDecoding = true;
@@ -118,6 +120,13 @@ void DecodeVideo::decodeVideo(std::function<void(cv::Mat&)>  getMat)
 	while (av_read_frame(m_formatContext, packet) >= 0) {
 		if (packet->stream_index == m_videoStreamIndex) {
 			// 解码帧数据
+			if(m_isPausedDecoding)
+			{
+				m_mutex.lock();
+				m_isDecoding = false;
+				m_mutex.unlock();
+				return;
+			}
 			avcodec_send_packet(m_codecContext, packet);
 			while (avcodec_receive_frame(m_codecContext, frame) == 0) {
 				// 将AVFrame转换为OpenCV的Mat
@@ -133,7 +142,7 @@ void DecodeVideo::decodeVideo(std::function<void(cv::Mat&)>  getMat)
 				// 显示帧
 				m_currentDecodeFrame++;
 				DisplayFrame(cvFrame);
-				getMat(cvFrame);
+				getMat(cvFrame,m_currentDecodeFrame);
 			}
 		}
 		av_packet_unref(packet);
@@ -312,7 +321,7 @@ cv::Mat DecodeVideo::getFrameMatAtTime(int64_t timeStamp)
 	av_packet_unref(pkt);
 	return {};
 }
-cv::Mat DecodeVideo::getDecodeBegin(std::function<void(cv::Mat&)>  getMat)
+cv::Mat DecodeVideo::getDecodeBegin(std::function<void(cv::Mat&, int64& curFrame)>  getMat)
 {
 	AVPacket* packet = av_packet_alloc();
 	AVFrame* frame = av_frame_alloc();
@@ -335,7 +344,7 @@ cv::Mat DecodeVideo::getDecodeBegin(std::function<void(cv::Mat&)>  getMat)
 					DEBUG("Frame type:{}",(int)frame->pict_type);
 					av_frame_free(&frame);
 					av_packet_free(&packet);
-					getMat(cvFrame);
+					getMat(cvFrame, m_beginFrame);
 					return cvFrame;
 				}
 			}
@@ -344,7 +353,7 @@ cv::Mat DecodeVideo::getDecodeBegin(std::function<void(cv::Mat&)>  getMat)
 
 	av_frame_free(&frame);
 	av_packet_free(&packet);
-//	return {};
+	return {};
 }
 
 bool DecodeVideo::isDecoding()

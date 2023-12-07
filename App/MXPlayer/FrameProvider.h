@@ -24,9 +24,10 @@ public:
 
 signals:
 	void videoSinkChanged();
+	void frameChanged(int64 currentFrame);
 
 public slots:
-	void deliverFrame(cv::Mat frame);
+	void deliverFrame(cv::Mat frame,int64 curFrameNum);
 	void debug();
 
 private:

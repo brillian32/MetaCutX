@@ -10,6 +10,7 @@
 #include <stdexcept>
 #include <cstdint>
 #include <opencv2/core/mat.hpp>
+#include "mutex"
 
 extern "C" {
 #include <libavformat/avformat.h>
@@ -35,8 +36,8 @@ public:
 	bool isDecoding();
 	void pauseDecoding();
 	void setDecodeBegin(int64 beginFrame);
-	cv::Mat getDecodeBegin(std::function<void(cv::Mat&)>  getMat);
-	void decodeVideo(std::function<void(cv::Mat&)>  getMat);
+	cv::Mat getDecodeBegin(std::function<void(cv::Mat&, int64& curFrame)>  getMat);
+	void decodeVideo(std::function<void(cv::Mat&,int64& curFrame)>  getMat);
 	void setOutputFilePath(std::string path);
 	cv::Mat getFrameMat(int64_t frames);
 	cv::Mat getFrameMat2(double percent);
@@ -65,6 +66,7 @@ private:
 	AVCodecParameters* m_codecParameters = nullptr;
 
 	std::mutex m_mutex;
+	std::mutex m_mutexDecode; // 解码锁
 };
 
 

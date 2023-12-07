@@ -19,7 +19,7 @@ public:
 
 	void setVideoDecoder(DecodeVideo *decoder);
 signals:
-	void sigFrameReady(cv::Mat frame);
+	void sigFrameReady(cv::Mat frame,int64 curFrame);
 
 public slots:
 	void setCurrentFrame(int64 curFrame);
