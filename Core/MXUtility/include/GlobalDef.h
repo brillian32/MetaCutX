@@ -15,5 +15,4 @@
 #define MX_API
 #endif
 
-
-#endif //GLOBALDEF_H
+#endif // GLOBALDEF_H

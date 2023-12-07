@@ -24,6 +24,7 @@ AllowAllParametersOfDeclarationOnNextLine: true
 
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakTemplateDeclarations: Yes
+#控制花括号
 BreakBeforeBraces: Custom
 BraceWrapping:
     AfterClass: true

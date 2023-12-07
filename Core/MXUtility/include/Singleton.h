@@ -15,24 +15,24 @@ class Singleton
 public:
 	static T* getInstance()
 	{
-		if(instance.isNull())
-		{
+		if (instance.isNull()) {
 			QMutexLocker locker(&mutex);
-			if(instance.isNull())
-			{
+			if (instance.isNull()) {
 				instance.reset(new T);
 			}
 		}
 		return instance.data();
 	}
+
 public:
-	~Singleton(){}
+	~Singleton() {}
+
 protected:
 	Singleton() = default;
 
 private:
 	static QScopedPointer<T> instance;
-	static QMutex    mutex;
+	static QMutex mutex;
 };
 template <class T>
 QScopedPointer<T> Singleton<T>::instance;
@@ -40,26 +40,26 @@ QScopedPointer<T> Singleton<T>::instance;
 template <class T>
 QMutex Singleton<T>::mutex;
 
-
 #define DECLARE_SINGLETON(Class) \
-    friend class Singleton<Class>; \
-    friend struct QScopedPointerDeleter<Class>; \
-Q_DISABLE_COPY(Class) \
+	friend class Singleton<Class>; \
+	friend struct QScopedPointerDeleter<Class>; \
+	Q_DISABLE_COPY(Class) \
 private: \
-    Class(Class const&&) = delete; \
-    Class& operator=(Class const&&) = delete; \
+	Class(Class const&&) = delete; \
+	Class& operator=(Class const&&) = delete; \
+\
 public: \
-    static Class* Instance() \
-    { \
-        return Singleton<Class>::getInstance(); \
-    }
+	static Class* Instance() \
+	{ \
+		return Singleton<Class>::getInstance(); \
+	}
 
-
-class C
-{
-	DECLARE_SINGLETON(C)
-private:
-	C(){}
-};
+//example
+//class C
+//{
+//	DECLARE_SINGLETON(C)
+//private:
+//	C() {}
+//};
 
 #endif // SINGLETONSIX

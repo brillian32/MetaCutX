@@ -7,7 +7,7 @@
           <value>
             <SchemaInfo>
               <option name="name" value=".clang-format" />
-              <option name="relativePathToSchema" value="https://json.schemastore.org/clang-format.json" />
+              <option name="relativePathToSchema" value=".clang-format" />
               <option name="applicationDefined" value="true" />
               <option name="patterns">
                 <list>
