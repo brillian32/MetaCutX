@@ -38,13 +38,13 @@ public:
 	void setDecodeBegin(int64 beginFrame);
 	cv::Mat getDecodeBegin(std::function<void(cv::Mat&, int64& curFrame)>  getMat);
 	void decodeVideo(std::function<void(cv::Mat&,int64& curFrame)>  getMat);
-	void setOutputFilePath(std::string path);
+
+	int64_t getFrameCount();
+	int64 getCurDecodeFrame();
 	cv::Mat getFrameMat(int64_t frames);
 	cv::Mat getFrameMat2(double percent);
 	cv::Mat getFrameMatAtTime(int64_t timeStamp);
 	double getDuration();
-	int64_t getFrameCount();
-	int64 getCurDecodeFrame();
 
 private:
 	void init();

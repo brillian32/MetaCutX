@@ -4,10 +4,12 @@
 
 #ifndef PLAYCONTROLLER_H
 #define PLAYCONTROLLER_H
-#include <QArgument>
-#include "Singleton.h"
-#include <QObject>
 #include "DecodeVideo.h"
+#include "Singleton.h"
+
+#include <QArgument>
+#include <QObject>
+#include <QThreadPool>
 
 class PlayController : public QObject
 {
@@ -31,6 +33,7 @@ public slots:
 	int64 getFrameCount();
 
 private:
+	QThreadPool m_threadPool;
 	DecodeVideo *m_decoder;
 	int64 m_curFrame = 0;
 };

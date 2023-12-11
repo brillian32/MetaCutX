@@ -3,6 +3,7 @@ import QtQuick.Controls
 
 Slider {
         property bool blockSig: false
+        property bool blockSig2: false
         width: parent.width
         height: 20
         id: control
@@ -37,6 +38,15 @@ Slider {
             color: control.hovered ? "#4f575d" : "#4f575d"
             border.color:  control.hovered ? "#f0f8fe": "#c3cad0"
             border.width: 2
+            MouseArea{
+                anchors.fill: parent
+                onPressed: {
+                    control.blockSig2 = true
+                }
+                onReleased: {
+                    control.blockSig2 = false
+                }
+            }
         }
 
         onValueChanged: {
@@ -46,5 +56,4 @@ Slider {
             console.log("value:",value,parseInt(value))
             playController.setCurrentFrame(parseInt(value))
         }
-
 }

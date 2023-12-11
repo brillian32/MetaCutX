@@ -155,11 +155,6 @@ void DecodeVideo::decodeVideo(std::function<void(cv::Mat&,int64& curFrame)>  get
 	m_mutex.unlock();
 }
 
-void DecodeVideo::setOutputFilePath(std::string path)
-{
-	m_outputFilePath = std::move(path);
-}
-
 void DecodeVideo::init()
 {
 	// 打开输入文件
@@ -323,6 +318,7 @@ cv::Mat DecodeVideo::getFrameMatAtTime(int64_t timeStamp)
 }
 cv::Mat DecodeVideo::getDecodeBegin(std::function<void(cv::Mat&, int64& curFrame)>  getMat)
 {
+	std::unique_lock lock(m_mutexDecode);
 	AVPacket* packet = av_packet_alloc();
 	AVFrame* frame = av_frame_alloc();
 	// 读取帧数据

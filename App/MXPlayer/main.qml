@@ -25,6 +25,9 @@ Window {
         target: frameProvider
 
         onFrameChanged: (value) =>{
+            if (slider.blockSig2) {
+                return;
+            }
             console.log("onFrameChanged.", value);
             slider.blockSig = true;
             slider.value = value;
