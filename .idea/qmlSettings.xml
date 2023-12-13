@@ -6,10 +6,9 @@
         <entry key="">
           <value>
             <PerProfileState>
-              <option name="myCustomQmlPath" value="E:\Qt6\6.4.3\msvc2019_64\qml" />
-              <option name="myCustomQtBinPath" value="E:\Qt6\6.4.3\msvc2019_64\bin" />
               <option name="myLSPEnabled" value="true" />
               <option name="myLSPCompletionEnabled" value="true" />
+              <option name="myQmlFormatEnabled" value="true" />
             </PerProfileState>
           </value>
         </entry>
